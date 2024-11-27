@@ -44,42 +44,50 @@ body {
     padding: 20px;
 }
 
-/* Seção de Notícias em Destaque */
-.highlighted-news {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-bottom: 20px;
+/* Estiliza o contêiner das notícias principais */
+.primary-news {
+    display: flex; /* Organiza os itens em linha */
+    gap: 20px; /* Espaço entre as notícias */
+    justify-content: space-between; /* Distribui o espaço */
 }
 
-/* Notícia principal */
-.highlighted-news .main-news {
-    flex: 2;
+/* Estiliza as notícias principais */
+.main-news {
+    flex: 1; /* Garante que cada notícia ocupe o mesmo espaço */
     display: flex;
-    flex-direction: column; /* Organiza o conteúdo em coluna */
-    align-items: flex-start; /* Alinha os itens à esquerda */
-    padding: 20px;
-    border-radius: 8px;
+    flex-direction: column; /* Alinha a imagem, título e resumo em coluna */
+    align-items: flex-start; /* Alinha os elementos à esquerda */
+    gap: 10px; /* Espaço entre os elementos internos */
+    background-color: #f4f4f4; /* Fundo claro */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
 }
 
+/* Ajuste das imagens */
 .main-news .news-image {
-    max-width: 100%;      /* Ajusta para caber no contêiner */
-    max-height: 300px;    /* Limita a altura */
-    object-fit: contain;  /* Mantém a proporção */
-    border-radius: 8px;
-    align-self: flex-start; /* Encosta a imagem à esquerda */
+    width: 100%; /* A imagem se ajusta à largura do contêiner */
+    height: 300px; /* Define uma altura fixa para uniformizar todas as imagens */
+    object-fit: cover; /* Ajusta o conteúdo da imagem para preencher a área, cortando excessos se necessário */
+    border-radius: 8px; /* Mantém bordas arredondadas */
 }
 
+/* Título e resumo */
 .main-news .news-title {
     font-size: 1.6rem;
     font-weight: bold;
-    margin-top: 15px;
     color: #333;
-    text-align: left; /* Alinha o texto à esquerda */
 }
 
+.main-news .news-summary {
+    font-size: 1rem;
+    color: #666;
+}
 
-
+@media (max-width: 768px) {
+    .primary-news {
+        flex-direction: column; /* Empilha as notícias em telas menores */
+    }
+}
 
 
 
@@ -130,6 +138,91 @@ body {
     color: #aaa;
     border-radius: 8px;
 }
+
+
+
+
+
+
+
+
+
+.upcoming-matches h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+
+.upcoming-matches {
+    background-color: #8b8aa0; /* Escolha uma cor de fundo diferente */
+    padding: 20px; /* Adiciona espaço ao redor do conteúdo */
+    border-radius: 8px; /* Faz bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra para dar destaque */
+    margin-top: 20px; /* Margem superior para separação */
+}
+
+.match-list {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 10px 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.match {
+    background: #ffffff; /* Cor de fundo para cada jogo */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    flex: 0 0 150px;
+}
+
+.match-date, .match-time {
+    font-size: 14px;
+    color: #333;
+}
+
+.team-icon {
+    max-height: 40px;
+    margin: 0 5px;
+}
+
+
+
+
+
+
+
+
+
+
+.teams {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espaço entre os ícones e o "vs" */
+    font-size: 1.2rem;
+    color: #333;
+}
+
+
+@media (max-width: 768px) {
+    .team-icon {
+        width: 30px;
+        height: 30px;
+    }
+    .teams {
+        font-size: 1rem;
+    }
+}
+
+
+
 
 
 
