@@ -212,78 +212,10 @@ body {
 
 
 
-
-
-
-
-
-/* Rodapé */
-.footer {
-    background-color: #f4f4f4;
-    padding: 20px;
-    text-align: center;
-    border-top: 1px solid #ddd;
-}
-.footer .columns {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-.footer .columns div {
-    flex: 1;
-    padding: 0 10px;
-}
-.footer p {
-    font-size: 14px;
-    color: #666;
-}
-.footer a {
-    color: #666;
-    text-decoration: none;
-}
-.footer a:hover {
-    color: #333;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .highlighted-news {
-        flex-direction: column;
-    }
-
-    .highlighted-news .main-news {
-        flex: 1 1 100%;
-        height: auto;  /* Ajusta altura da notícia principal */
-    }
-
-    .highlighted-news .secondary-news {
-        flex: 1 1 100%;
-    }
-
-    .news-grid {
-        grid-template-columns: repeat(2, 1fr);  /* 2 colunas em telas médias */
-    }
-}
-
-@media (max-width: 480px) {
-    .news-grid {
-        grid-template-columns: 1fr;  /* 1 coluna em telas pequenas */
-    }
-
-    .main-news .news-title {
-        font-size: 1.2rem;
-    }
-
-    .secondary-news .news-item .news-title {
-        font-size: 1rem;
-    }
-}
-
-
 .liga-container {
     display: flex;
     justify-content: flex-start; /* Alinhando os itens à esquerda */
-    gap: 20px; 
+    gap: 20px; /* Espaço entre os clubes */
     padding: 20px;
     margin: 0 auto;
     width: 100%; /* Garantir que ocupe toda a largura disponível */
@@ -368,3 +300,67 @@ body {
         font-size: 0.8rem;
     }
 }
+
+
+/* Rodapé */
+.footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+.footer .columns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.footer .columns div {
+    flex: 1;
+    padding: 0 10px;
+}
+.footer p {
+    font-size: 14px;
+    color: #666;
+}
+.footer a {
+    color: #666;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #333;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .highlighted-news {
+        flex-direction: column;
+    }
+
+    .highlighted-news .main-news {
+        flex: 1 1 100%;
+        height: auto;  /* Ajusta altura da notícia principal */
+    }
+
+    .highlighted-news .secondary-news {
+        flex: 1 1 100%;
+    }
+
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);  /* 2 colunas em telas médias */
+    }
+}
+
+@media (max-width: 480px) {
+    .news-grid {
+        grid-template-columns: 1fr;  /* 1 coluna em telas pequenas */
+    }
+
+    .main-news .news-title {
+        font-size: 1.2rem;
+    }
+
+    .secondary-news .news-item .news-title {
+        font-size: 1rem;
+    }
+}
+
