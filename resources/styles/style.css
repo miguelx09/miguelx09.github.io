@@ -92,38 +92,45 @@ body {
 
 
 .secondary-news {
-    display: flex; /* Ativa o layout Flexbox */
+    display: flex; /* Ativa Flexbox */
     justify-content: space-between; /* Espaça uniformemente os itens */
-    gap: 20px; /* Espaçamento entre as notícias */
-    padding: 10px; /* Adiciona um pouco de espaçamento interno */
-    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se necessário */
+    gap: 20px; /* Espaçamento entre os itens */
+    padding: 20px;
+    background-color: #e0e0e0; /* Cor de fundo */
+    border-radius: 10px; /* Cantos arredondados */
 }
 
 .news-item {
-    flex: 1 1 calc(25% - 20px); /* Cada item ocupa 25% da largura menos o espaçamento */
+    flex: 1 1 calc(25% - 20px); /* Divide igualmente o espaço em 4 colunas */
     display: flex;
-    flex-direction: column; /* Organiza o título abaixo da imagem */
+    flex-direction: column; /* Ordena os elementos verticalmente */
     align-items: center;
     text-align: center;
-    border: 1px solid #ccc; /* Adiciona uma borda ao redor de cada notícia */
+    background-color: #fff; /* Cor de fundo de cada item */
+    border: 1px solid #ccc; /* Adiciona borda ao redor */
     border-radius: 8px; /* Cantos arredondados */
-    overflow: hidden; /* Garante que nada ultrapasse o limite do contêiner */
-    background: #f9f9f9; /* Cor de fundo leve */
+    overflow: hidden; /* Garante que o conteúdo não exceda os limites */
     padding: 10px;
+    box-sizing: border-box; /* Inclui padding no cálculo do tamanho */
+    height: 100%; /* Garante alturas iguais */
 }
 
 .news-image {
-    max-width: 100%; /* Garante que a imagem se ajuste ao contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-    border-bottom: 1px solid #ccc; /* Linha divisória entre a imagem e o título */
+    width: 100%; /* Imagens ocupam toda a largura disponível */
+    aspect-ratio: 16/9; /* Mantém a proporção 16:9 */
+    object-fit: cover; /* Ajusta a imagem ao tamanho sem distorção */
+    margin-bottom: 10px;
+    border-radius: 6px; /* Bordas arredondadas para a imagem */
 }
 
 .news-title {
     font-size: 1rem;
     font-weight: bold;
-    margin-top: 10px;
     color: #333;
+    margin: 10px 0 0 0; /* Espaçamento no topo */
+    line-height: 1.4; /* Melhora a legibilidade */
 }
+
 
 /* Grid de Notícias */
 .news-grid {
