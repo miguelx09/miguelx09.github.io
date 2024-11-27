@@ -283,7 +283,7 @@ body {
 .liga-container {
     display: flex;
     justify-content: flex-start; /* Alinhando os itens à esquerda */
-    gap: 20px; /* Espaço entre os clubes */
+    gap: 20px; 
     padding: 20px;
     margin: 0 auto;
     width: 100%; /* Garantir que ocupe toda a largura disponível */
@@ -317,7 +317,6 @@ body {
 
 .club-logo {
     width: 100%;
-    max-width: 50px;
     height: auto;
     display: block;
     margin: 0 auto;
