@@ -155,7 +155,7 @@ body {
     padding: 20px; /* Adiciona espaço ao redor do conteúdo */
     border-radius: 8px; /* Faz bordas arredondadas */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra para dar destaque */
-    margin-top: 20px; /* Margem superior para separação */
+    margin-bottom: 20px;
 }
 
 .match-list {
