@@ -49,6 +49,7 @@ body {
     display: flex; /* Organiza os itens em linha */
     gap: 20px; /* Espaço entre as notícias */
     justify-content: space-between; /* Distribui o espaço */
+    margin-bottom: 20px;
 }
 
 /* Estiliza as notícias principais */
