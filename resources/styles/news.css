@@ -1,3 +1,4 @@
+/* Estilos gerais */
 * {
     margin: 0;
     padding: 0;
@@ -5,37 +6,33 @@
 }
 body {
     font-family: Arial, sans-serif;
+    background-color: #6e8784 ;
 }
+
 
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 10px;
     background-color: #f4f4f4;
     border-bottom: 1px solid #ddd;
 }
-
-.header .logo img {
-    width: 120px;
-    height: auto;
-    object-fit: contain;
-}
-
-.header nav {
-    display: flex;
-    gap: 15px;
-}
-
 .header nav a {
+    margin: 0 15px;
     text-decoration: none;
     color: #333;
-    font-size: 1rem;
-    font-weight: bold;
 }
-
 .header nav a:hover {
     color: #000;
+}
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.logo img {
+    width: 150px;
+    height: auto;
 }
 
 .content {
