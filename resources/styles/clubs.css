@@ -1,4 +1,3 @@
-/* Estilos gerais */
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #6e8784 ;
+    background-color: #6e8784;
 }
 
 
@@ -15,8 +14,31 @@ body {
 /* Conteúdo */
 .content {
     padding: 20px;
+    justify-items: center;
 }
 
+.club-item {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.club-item:hover {
+    transform: scale(1.25);
+}
+
+.club-logo {
+    margin-bottom: 10px;
+}
+
+.club-item p {
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+}
 
 /* Rodapé */
 
