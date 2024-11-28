@@ -1,14 +1,9 @@
-
-
-
-
 table{
     width: 100vw;
     text-align: center;
 }
 
 .scoreboard-portugal{
-    position: absolute;
     margin-top: 110px;
     z-index: -1;
     border: 1px solid #001e28;
