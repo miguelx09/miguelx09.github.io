@@ -1,0 +1,166 @@
+table{
+    width: 100vw;
+    text-align: center;
+}
+
+.scoreboard-portugal{
+    margin-top: 110px;
+    z-index: -1;
+    border: 1px solid #001e28;
+    border-top:none;
+    border-bottom:none;
+    width: 40vw;
+    margin-left: 30%;
+    font-size: 0.75em;
+    border-collapse: collapse;
+    background-color: #00141e;
+}
+
+#scoreboard-portugal-header{
+    padding: 15px;
+    padding-left: 20px;
+    background-color: #f1f3f4;
+    text-align: left;
+    color: #ffffff;
+}
+
+#ano{
+    font-weight: 600;
+    color: #4285f4;
+}
+
+a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #70758d;
+    text-decoration: none;
+}
+
+.scoreboard-portugal th{
+    font-weight: 100;
+    color: #ffffff;
+    padding: 4px;
+    height: 35px;
+    background-color: #001e28;
+
+}
+.scoreboard-portugal td {
+    font-weight: 400; 
+    color: #ffffff;
+    padding: 8px;  
+    vertical-align: middle; 
+    height: auto; 
+    width: auto; 
+    font-size: 1.1em; 
+}
+
+.scoreboard-portugal img{
+    width: 25px;
+}
+
+.tabela-colunas-bordas{
+    border-top: none !important;
+}
+
+.titulo-clube{
+    width: 35%;
+    text-align: left;
+}
+
+.titulo-ultimas-cinco {
+    width: auto; 
+    padding: 10px; 
+    text-align: center;
+    vertical-align: middle; 
+}
+.titulo-ultimas-cinco img{
+    width: 17px;
+}
+
+.titulo-clube, .borda-azul, .borda-verde, .borda-laranja, .borda-vermelho {
+    padding-left: 10px; 
+    text-align: left; 
+    height: auto;
+}
+.legenda table{
+    width: 40vw;
+    margin: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #e9eaeb;
+    border-radius: 3px;
+    padding: 15px;
+    text-align: left;
+    background-color: #00141e;
+}
+
+.legenda th{
+    border-top: none;
+    font-size: 1.1em;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.legenda img{
+    width: 10px;
+}
+
+.legenda td{
+    border-top: none;
+    font-size: 1em;
+    height: 3px;
+    width: 50%;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+    font-size: 1.2em; 
+    margin: 5px auto; 
+}
+
+
+.form span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px; 
+    height: 25px;
+    border-radius: 8px; 
+    font-weight: bold;
+    font-size: 0.9em;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); 
+    border: none; 
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
+}
+
+.form span.win {
+    background-color: #34c759;
+    color: #ffffff;
+    border: 1px solid rgba(52, 199, 89, 0.8); 
+}
+
+.form span.draw {
+    background-color: #ffcc00;
+    color: #ffffff;
+    border: 1px solid rgba(255, 204, 0, 0.8); 
+}
+
+.form span.loss {
+    background-color: #ff3b30;
+    color: #ffffff;
+    border: 1px solid rgba(255, 59, 48, 0.8); 
+}
+
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+}
