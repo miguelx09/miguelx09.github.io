@@ -1,4 +1,3 @@
-/* Estilos gerais */
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +5,8 @@
 }
 body {
     font-family: Arial, sans-serif;
-    background-color: #6e8784 ;
+    background-color: #6e8784;
 }
-
 
 .header {
     display: flex;
@@ -35,44 +33,35 @@ body {
     height: auto;
 }
 
-
-
-
-
-/* Conteúdo */
 .content {
     padding: 20px;
 }
 
-/* Estiliza o contêiner das notícias principais */
 .primary-news {
-    display: flex; /* Organiza os itens em linha */
-    gap: 20px; /* Espaço entre as notícias */
-    justify-content: space-between; /* Distribui o espaço */
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
     margin-bottom: 20px;
 }
 
-/* Estiliza as notícias principais */
 .main-news {
-    flex: 1; /* Garante que cada notícia ocupe o mesmo espaço */
+    flex: 1;
     display: flex;
-    flex-direction: column; /* Alinha a imagem, título e resumo em coluna */
-    align-items: flex-start; /* Alinha os elementos à esquerda */
-    gap: 10px; /* Espaço entre os elementos internos */
-    background-color: #f4f4f4; /* Fundo claro */
-    padding: 10px; /* Espaçamento interno */
-    border-radius: 8px; /* Bordas arredondadas */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 8px;
 }
 
-/* Ajuste das imagens */
 .main-news .news-image {
-    width: 100%; /* A imagem se ajusta à largura do contêiner */
-    height: 300px; /* Define uma altura fixa para uniformizar todas as imagens */
-    object-fit: cover; /* Ajusta o conteúdo da imagem para preencher a área, cortando excessos se necessário */
-    border-radius: 8px; /* Mantém bordas arredondadas */
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
-/* Título e resumo */
 .main-news .news-title {
     font-size: 1.6rem;
     font-weight: bold;
@@ -86,53 +75,50 @@ body {
 
 @media (max-width: 768px) {
     .primary-news {
-        flex-direction: column; /* Empilha as notícias em telas menores */
+        flex-direction: column;
     }
 }
 
-
 .secondary-news {
-    display: flex; /* Ativa Flexbox */
-    justify-content: space-between; /* Espaça uniformemente os itens */
-    gap: 20px; /* Espaçamento entre os itens */
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
     padding: 20px;
-    background-color: #e0e0e0; /* Cor de fundo */
-    border-radius: 10px; /* Cantos arredondados */
+    background-color: #e0e0e0;
+    border-radius: 10px;
 }
 
 .news-item {
-    flex: 1 1 calc(25% - 20px); /* Divide igualmente o espaço em 4 colunas */
+    flex: 1 1 calc(25% - 20px);
     display: flex;
-    flex-direction: column; /* Ordena os elementos verticalmente */
+    flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #fff; /* Cor de fundo de cada item */
-    border: 1px solid #ccc; /* Adiciona borda ao redor */
-    border-radius: 8px; /* Cantos arredondados */
-    overflow: hidden; /* Garante que o conteúdo não exceda os limites */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
     padding: 10px;
-    box-sizing: border-box; /* Inclui padding no cálculo do tamanho */
-    height: 100%; /* Garante alturas iguais */
+    box-sizing: border-box;
+    height: 100%;
 }
 
 .news-image {
-    width: 100%; /* Imagens ocupam toda a largura disponível */
-    aspect-ratio: 16/9; /* Mantém a proporção 16:9 */
-    object-fit: cover; /* Ajusta a imagem ao tamanho sem distorção */
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
     margin-bottom: 10px;
-    border-radius: 6px; /* Bordas arredondadas para a imagem */
+    border-radius: 6px;
 }
 
 .news-title {
     font-size: 1rem;
     font-weight: bold;
     color: #333;
-    margin: 10px 0 0 0; /* Espaçamento no topo */
-    line-height: 1.4; /* Melhora a legibilidade */
+    margin: 10px 0 0 0;
+    line-height: 1.4;
 }
 
-
-/* Grid de Notícias */
 .news-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -149,8 +135,6 @@ body {
     border-radius: 8px;
 }
 
-
-
 .upcoming-matches h2 {
     font-size: 1.8rem;
     margin-bottom: 15px;
@@ -159,10 +143,10 @@ body {
 }
 
 .upcoming-matches {
-    background-color: #8b8aa0; /* Escolha uma cor de fundo diferente */
-    padding: 20px; /* Adiciona espaço ao redor do conteúdo */
-    border-radius: 8px; /* Faz bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra para dar destaque */
+    background-color: #8b8aa0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
 
@@ -178,7 +162,7 @@ body {
 }
 
 .match {
-    background: #ffffff; /* Cor de fundo para cada jogo */
+    background: #ffffff;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 10px;
@@ -196,17 +180,14 @@ body {
     margin: 0 5px;
 }
 
-
-
 .teams {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px; /* Espaço entre os ícones e o "vs" */
+    gap: 10px;
     font-size: 1.2rem;
     color: #333;
 }
-
 
 @media (max-width: 768px) {
     .team-icon {
@@ -218,27 +199,25 @@ body {
     }
 }
 
-
-
 .liga-container {
     display: flex;
-    justify-content: flex-start; /* Alinhando os itens à esquerda */
-    gap: 20px; /* Espaço entre os clubes */
+    justify-content: flex-start;
+    gap: 20px;
     padding: 20px;
     margin: 0 auto;
-    width: 100%; /* Garantir que ocupe toda a largura disponível */
+    width: 100%;
     background-color: #332b25bc;
     border-radius: 10px;
-    overflow-x: auto; /* Permite rolagem horizontal */
-    white-space: nowrap; /* Impede quebra de linha */
-    box-sizing: border-box; /* Certifica-se que o padding e margens sejam inclusos no cálculo de largura */
+    overflow-x: auto;
+    white-space: nowrap;
+    box-sizing: border-box;
 }
 
 .club {
     text-align: center;
-    flex: 1 1 auto; /* Flexível: pode crescer e encolher automaticamente */
-    min-width: 80px; /* Largura mínima para garantir que os clubes não encolham muito */
-    max-width: 10vw; /* Largura máxima relativa à largura da tela */
+    flex: 1 1 auto;
+    min-width: 80px;
+    max-width: 10vw;
     margin-bottom: 15px;
     background-color: #fff;
     padding: 10px;
@@ -276,7 +255,7 @@ body {
 @media (max-width: 1200px) {
     .club {
         min-width: 70px;
-        max-width: 12vw; /* Ajuste relativo à tela */
+        max-width: 12vw;
     }
     .club-logo {
         max-width: 45px;
@@ -286,7 +265,7 @@ body {
 @media (max-width: 768px) {
     .club {
         min-width: 60px;
-        max-width: 15vw; /* Ajuste relativo à tela */
+        max-width: 15vw;
     }
     .club-logo {
         max-width: 40px;
@@ -299,7 +278,7 @@ body {
 @media (max-width: 480px) {
     .club {
         min-width: 50px;
-        max-width: 20vw; /* Ajuste relativo à tela */
+        max-width: 20vw;
     }
     .club-logo {
         max-width: 30px;
@@ -309,8 +288,6 @@ body {
     }
 }
 
-
-/* Rodapé */
 .footer {
     background-color: #f4f4f4;
     padding: 20px;
@@ -338,7 +315,6 @@ body {
     color: #333;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .highlighted-news {
         flex-direction: column;
@@ -346,7 +322,7 @@ body {
 
     .highlighted-news .main-news {
         flex: 1 1 100%;
-        height: auto;  /* Ajusta altura da notícia principal */
+        height: auto;
     }
 
     .highlighted-news .secondary-news {
@@ -354,13 +330,13 @@ body {
     }
 
     .news-grid {
-        grid-template-columns: repeat(2, 1fr);  /* 2 colunas em telas médias */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 480px) {
     .news-grid {
-        grid-template-columns: 1fr;  /* 1 coluna em telas pequenas */
+        grid-template-columns: 1fr;
     }
 
     .main-news .news-title {
@@ -371,4 +347,3 @@ body {
         font-size: 1rem;
     }
 }
-
