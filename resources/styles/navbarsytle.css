@@ -1,10 +1,12 @@
+
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: #333; /* Cor de fundo da barra de navegação */
-    color: #fff;
+    background-color: #fff; /* Cor de fundo branca */
+    color: #333; /* Cor do texto */
+    border-bottom: 1px solid #ddd; /* Linha separadora discreta */
 }
 
 .logo img {
@@ -19,16 +21,16 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #fff; /* Cor do texto */
+    color: #333; /* Cor do texto */
     padding: 8px 15px;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
     font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #555; /* Cor de fundo ao passar o mouse */
-    color: #fff;
+    background-color: #f0f0f0; /* Fundo cinza claro ao passar o mouse */
+    color: #000; /* Texto preto ao passar o mouse */
 }
 
 /* Responsivo */
@@ -41,5 +43,58 @@ nav a:hover {
     nav {
         flex-wrap: wrap;
         gap: 10px;
+    }
+}
+
+/* Footer Geral */
+.footer {
+    background-color: #f8f8f8; /* Fundo claro */
+    color: #333; /* Texto escuro */
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd; /* Linha separadora */
+    font-size: 14px;
+}
+
+.footer .columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaço entre as colunas */
+    margin-bottom: 15px;
+}
+
+.footer .columns div {
+    flex: 1;
+    min-width: 150px; /* Largura mínima para colunas pequenas */
+}
+
+.footer h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.footer p, .footer a {
+    margin: 0;
+    line-height: 1.6;
+    color: #555;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #000; /* Cor preta no hover */
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .footer .columns {
+        flex-direction: column; /* Organiza as colunas verticalmente */
+        align-items: center;
     }
 }

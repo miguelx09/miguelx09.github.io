@@ -263,33 +263,6 @@ body {
     }
 }
 
-.footer {
-    background-color: #f4f4f4;
-    padding: 20px;
-    text-align: center;
-    border-top: 1px solid #ddd;
-}
-.footer .columns {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-.footer .columns div {
-    flex: 1;
-    padding: 0 10px;
-}
-.footer p {
-    font-size: 14px;
-    color: #666;
-}
-.footer a {
-    color: #666;
-    text-decoration: none;
-}
-.footer a:hover {
-    color: #333;
-}
-
 @media (max-width: 768px) {
     .highlighted-news {
         flex-direction: column;
