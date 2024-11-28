@@ -8,6 +8,10 @@ body {
     font-family: Arial, sans-serif;
     background-color: #6e8784;
     .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
         background-color: #6e8784;
     }
 }
@@ -138,4 +142,34 @@ body {
         flex-direction: column;
         align-items: center;
     }
+}
+
+.news-image {
+    display: block; /* Ensure it respects block-level dimensions */
+    width: 100%; /* Make the image fill the width of the article */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px; /* Optional: Rounded corners */
+}
+
+.content article {
+    width: 100%;
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content p{
+    margin: 2.5%;
+}
+
+article {
+    width: max-content;
+    margin-bottom: 20px;
+}
+article a {
+    display: block;
+    margin-top: 10px;
 }
