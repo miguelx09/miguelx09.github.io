@@ -8,31 +8,6 @@ body {
     background-color: #6e8784;
 }
 
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #f4f4f4;
-    border-bottom: 1px solid #ddd;
-}
-.header nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #333;
-}
-.header nav a:hover {
-    color: #000;
-}
-.header .logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-.logo img {
-    width: 150px;
-    height: auto;
-}
-
 .content {
     padding: 20px;
 }
