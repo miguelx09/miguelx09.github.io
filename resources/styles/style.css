@@ -8,31 +8,6 @@ body {
     background-color: #6e8784;
 }
 
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #f4f4f4;
-    border-bottom: 1px solid #ddd;
-}
-.header nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #333;
-}
-.header nav a:hover {
-    color: #000;
-}
-.header .logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-.logo img {
-    width: 150px;
-    height: auto;
-}
-
 .content {
     padding: 20px;
 }
@@ -284,33 +259,6 @@ body {
     .club-points {
         font-size: 0.8rem;
     }
-}
-
-.footer {
-    background-color: #f4f4f4;
-    padding: 20px;
-    text-align: center;
-    border-top: 1px solid #ddd;
-}
-.footer .columns {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-.footer .columns div {
-    flex: 1;
-    padding: 0 10px;
-}
-.footer p {
-    font-size: 14px;
-    color: #666;
-}
-.footer a {
-    color: #666;
-    text-decoration: none;
-}
-.footer a:hover {
-    color: #333;
 }
 
 @media (max-width: 768px) {
