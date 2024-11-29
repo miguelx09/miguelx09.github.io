@@ -40,10 +40,11 @@ main {
     padding: 10px;
     margin: 0 auto;
     max-width: 100%;
-    overflow-x: auto;
+    overflow-x: auto; /* Enable horizontal scrolling */
     scroll-behavior: smooth;
     background-color: #332b25bc;
     border-radius: 10px;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for mobile */
 }
 
 .club-item {
@@ -111,6 +112,13 @@ main {
     text-align: center;
 }
 
+.popup-content img {
+    max-width: 100%; 
+    height: auto;      
+    object-fit: contain;
+    margin-bottom: 10px; 
+}
+
 .close-button {
     display: inline-block;
     margin-top: 10px;
@@ -126,4 +134,63 @@ main {
 
 .close-button:hover {
     background-color: #d32f2f; 
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .liga-container {
+        gap: 10px;
+    }
+
+    .club-item {
+        width: 80px;
+        height: 100px;
+    }
+
+    .club-logo {
+        max-width: 35px;
+    }
+    
+    .news-title {
+        font-size: 0.9rem;
+    }
+
+    .popup-content {
+        width: 90%;   /* Makes popup width narrower on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        padding: 10px;
+    }
+
+    .news-title {
+        font-size: 0.8rem;
+    }
+
+    .liga-container {
+        gap: 10px;
+        overflow-x: scroll;  /* Keeps horizontal scroll on mobile */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+    }
+
+    .club-item {
+        width: 70px;
+        height: 90px;
+    }
+
+    .club-logo {
+        max-width: 30px;
+    }
+
+    .popup-content {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .close-button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
 }
