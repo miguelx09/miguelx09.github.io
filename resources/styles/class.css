@@ -29,16 +29,6 @@ table{
     color: #4285f4;
 }
 
-a:link {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-a:visited{
-    color: #70758d;
-    text-decoration: none;
-}
-
 .scoreboard-portugal th{
     font-weight: 100;
     color: #ffffff;
