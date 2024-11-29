@@ -6,26 +6,26 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background-color: #6e8784;
     color: #333;
 }
 
 table{
     width: 100vw;
     text-align: center;
+    margin-bottom: 100px;
 }
 
 .scoreboard-portugal{
     margin-top: 110px;
     z-index: -1;
-    border: 1px solid #001e28;
     border-top:none;
     border-bottom:none;
     width: 40vw;
     margin-left: 30%;
     font-size: 0.75em;
     border-collapse: collapse;
-    background-color: #00141e;
+    background-color: #ffffff;
 }
 
 #scoreboard-portugal-header{
@@ -42,16 +42,14 @@ table{
 }
 
 .scoreboard-portugal th{
-    font-weight: 100;
     color: #ffffff;
     padding: 4px;
     height: 35px;
-    background-color: #001e28;
+    background-color: #b4b4b4;
 
 }
 .scoreboard-portugal td {
     font-weight: 400; 
-    color: #ffffff;
     padding: 8px;  
     vertical-align: middle; 
     height: auto; 
@@ -59,6 +57,9 @@ table{
     font-size: 1.1em; 
 }
 
+.scoreboard-portugal tr{
+    border-bottom: 1px solid #f0f0f0;
+}
 .scoreboard-portugal img{
     width: 25px;
 }
