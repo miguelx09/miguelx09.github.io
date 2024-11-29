@@ -9,12 +9,41 @@ body {
     background-color: #6e8784;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
 
+main {
+    flex: 1;
+}
 
 /* Conteúdo */
 .content {
     padding: 20px;
     justify-items: center;
+}
+
+.news-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.liga-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start; 
+    gap: 20px;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    background-color: #332b25bc;
+    border-radius: 10px;
 }
 
 .club-item {
@@ -46,73 +75,6 @@ body {
     cursor: pointer;
 }
 
-
-.club-item p {
-    font-size: 1rem;
-    color: #333;
-    margin: 0;
-}
-
-/* Rodapé */
-
-
-.news-zone {
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    text-align: center;
-    min-height: 200px;
-}
-
-
-.radio {
-    display: none;
-}
-
-
-
-.radio:checked + label + .club-content {
-    display: block;
-}
-
-.default-content {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 1.2rem;
-    color: #333;
-}
-
-.liga-container {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start; 
-    gap: 20px;
-    padding: 10px;
-    margin: 0 auto;
-    max-width: 100%;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    background-color: #332b25bc;
-    border-radius: 10px;
-}
-
-.club-content {
-    display: none;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 1.2rem;
-    color: #333;
-}
-
-.club {
-    text-align: center; 
-    flex: 0 1 calc(100% / 12); 
-    max-width: 50px; 
-    margin-bottom: 10px; 
-}
-
 .club-logo {
     width: 100%;
     max-width: 40px;
@@ -122,14 +84,6 @@ body {
     cursor: pointer;
 }
 
-.club-points {
-    margin-top: 5px;
-    font-size: 0.9rem; 
-    color: #333; 
-    line-height: 1.2;
-}
-
-/* General popup container styles */
 .popup {
     display: none;
     position: fixed;
@@ -143,40 +97,20 @@ body {
     align-items: center;
 }
 
-#popup-sporting:target,
-#popup-porto:target,
-#popup-benfica:target,
-#popup-santaclara:target,
-#popup-braga:target,
-#popup-vitoria:target,
-#popup-famalicao:target,
-#popup-moreirense:target,
-#popup-casapia:target,
-#popup-rioave:target,
-#popup-gilvicente:target,
-#popup-estorilpraia:target,
-#popup-avs:target,
-#popup-boavista:target,
-#popup-estreladaamadora:target,
-#popup-arouca:target,
-#popup-nacional:target,
-#popup-farense:target {
+.popup:target {
     display: flex;
 }
 
-/* Popup content box */
 .popup-content {
     background: #ffffff;
     color: #333;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    max-width: 500px;
     width: 80%;
     text-align: center;
 }
 
-/* Close button */
 .close-button {
     display: inline-block;
     margin-top: 10px;
