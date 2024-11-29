@@ -24,15 +24,28 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    flex-shrink: 0;
+    width: 100px; 
+    height: 120px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+
 .club-item:hover {
-    transform: scale(1.25);
+    transform: scale(1.1); 
 }
 
 .club-logo {
+    width: 60%; 
+    height: auto;
+    object-fit: contain; 
     margin-bottom: 10px;
+    cursor: pointer;
 }
+
 
 .club-item p {
     font-size: 1rem;
@@ -50,7 +63,7 @@ body {
     border: 1px solid #ddd;
     border-radius: 8px;
     text-align: center;
-    min-height: 200px; /* Ensures space is always available */
+    min-height: 200px;
 }
 
 
@@ -73,12 +86,16 @@ body {
 
 .liga-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
+    flex-wrap: nowrap;
+    justify-content: flex-start; 
+    gap: 20px;
     padding: 10px;
     margin: 0 auto;
-    max-width: 90%;
+    max-width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    background-color: #332b25bc;
+    border-radius: 10px;
 }
 
 .club-content {
