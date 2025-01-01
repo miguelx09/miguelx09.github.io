@@ -1,3 +1,12 @@
+:root {
+    --primary-color: #6e8784;
+    --secondary-color: #f4f4f4;
+    --dark-bg: #333;
+    --dark-text: #f4f4f4;
+    --font-size-base: 1rem;
+    --spacing-base: 10px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +15,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #6e8784;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .content {
@@ -108,6 +118,14 @@ body {
     border-radius: 8px;
 }
 
+.news-item, .main-news {
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    color: var(--dark-text);
+    padding: 10px;
+}
+
+
 .upcoming-matches h2 {
     font-size: 1.8rem;
     margin-bottom: 15px;
@@ -133,6 +151,16 @@ body {
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
+
+.match-list::-webkit-scrollbar {
+    height: 8px;
+}
+.match-list::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
+
 
 .match {
     background: #ffffff;
@@ -224,6 +252,17 @@ body {
     padding: 5px 10px;
     border-radius: 6px;
 }
+.club:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 4px;
+}
+
+.club:active {
+    transform: translateY(2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
 
 @media (max-width: 1200px) {
     .club {
@@ -374,6 +413,9 @@ body.dark-mode .club {
     width: 100%;
     max-width: 400px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-left: 40px;
+    background: url('search-icon.svg') no-repeat 10px center, #fff;
+    background-size: 20px;
 }
 
 .news-item.hidden {
@@ -395,6 +437,20 @@ body.dark-mode .club {
     z-index: 1000;
     display: none;
 }
+.news-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
+.news-popup-overlay.active {
+    display: block;
+}
+
 
 .news-popup.active {
     display: block;

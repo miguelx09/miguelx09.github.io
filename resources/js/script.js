@@ -1,43 +1,57 @@
-// Slider for "Upcoming Matches"
+// Função genérica para alternar classes
+function toggleClass(element, className) {
+    element.classList.toggle(className);
+}
+
+// Função para rolar suavemente até um elemento
+function smoothScrollTo(selector) {
+    document.querySelector(selector).scrollIntoView({ behavior: 'smooth' });
+}
+
+// Slider para "Upcoming Matches"
 document.querySelector('.match-list').addEventListener('wheel', (event) => {
     event.preventDefault();
-    const container = event.currentTarget;
-    container.scrollBy({
+    event.currentTarget.scrollBy({
         left: event.deltaY < 0 ? -200 : 200,
-        behavior: 'smooth'
+        behavior: 'smooth',
     });
 });
 
-// Expand/Collapse News Summary
-document.querySelectorAll('.main-news .news-summary').forEach((summary) => {
+// Expandir/Contrair Resumo de Notícias
+const newsSummaries = document.querySelectorAll('.main-news .news-summary');
+newsSummaries.forEach((summary) => {
     summary.addEventListener('click', () => {
-        summary.classList.toggle('expanded');
+        toggleClass(summary, 'expanded');
         summary.style.maxHeight = summary.classList.contains('expanded') 
             ? `${summary.scrollHeight}px` 
             : '50px';
     });
 });
 
-// Dark Mode Toggle
+// Botão para Modo Escuro
 const toggleTheme = document.createElement('button');
 toggleTheme.textContent = 'Toggle Dark Mode';
-toggleTheme.style.position = 'fixed';
-toggleTheme.style.bottom = '10px';
-toggleTheme.style.right = '10px';
-toggleTheme.style.padding = '10px';
-toggleTheme.style.backgroundColor = '#333';
-toggleTheme.style.color = '#fff';
-toggleTheme.style.border = 'none';
-toggleTheme.style.borderRadius = '5px';
-toggleTheme.style.cursor = 'pointer';
+Object.assign(toggleTheme.style, {
+    position: 'fixed',
+    bottom: '10px',
+    right: '10px',
+    padding: '10px',
+    backgroundColor: '#333',
+    color: '#fff',
+    border: 'none',
+    borderRadius: '5px',
+    cursor: 'pointer',
+});
+
 document.body.appendChild(toggleTheme);
 
 toggleTheme.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
+    toggleClass(document.body, 'dark-mode');
 });
 
-// Hover Effect on Club Cards
-document.querySelectorAll('.club').forEach((club) => {
+// Efeito Hover nos Cartões dos Clubes
+const clubs = document.querySelectorAll('.club');
+clubs.forEach((club) => {
     club.addEventListener('mouseenter', () => {
         club.style.transform = 'scale(1.1)';
     });
@@ -46,48 +60,63 @@ document.querySelectorAll('.club').forEach((club) => {
     });
 });
 
-// Search News Functionality
+// Funcionalidade de Busca de Notícias
 const searchInput = document.getElementById('search');
-searchInput.addEventListener('input', (event) => {
-    const query = event.target.value.toLowerCase();
-    document.querySelectorAll('.news-item').forEach((newsItem) => {
-        const title = newsItem.querySelector('.news-title').textContent.toLowerCase();
-        newsItem.style.display = title.includes(query) ? 'block' : 'none';
-    });
-});
-
-// Smooth Scroll Between Sections
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+if (searchInput) {
+    searchInput.addEventListener('input', (event) => {
+        const query = event.target.value.toLowerCase();
+        document.querySelectorAll('.news-item').forEach((newsItem) => {
+            const title = newsItem.querySelector('.news-title').textContent.toLowerCase();
+            newsItem.style.display = title.includes(query) ? 'block' : 'none';
         });
     });
-});
+}
 
-// Pop-Up on News Click
-document.querySelectorAll('.news-item').forEach((news) => {
-    news.addEventListener('click', () => {
-        const title = news.querySelector('.news-title').textContent;
-        alert(`More details about: ${title}`);
+// Scroll Suave Entre Seções
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener('click', (e) => {
+        e.preventDefault();
+        smoothScrollTo(anchor.getAttribute('href'));
     });
 });
 
-// Scroll to Top Button
+// Pop-Up ao Clicar em Notícias
+const newsItems = document.querySelectorAll('.news-item');
+newsItems.forEach((news) => {
+    news.addEventListener('click', () => {
+        const title = news.querySelector('.news-title').textContent;
+        alert(`Mais detalhes sobre: ${title}`);
+    });
+});
+
+// Botão de "Scroll to Top"
 const scrollTopBtn = document.createElement('button');
 scrollTopBtn.id = 'scrollTop';
 scrollTopBtn.textContent = '↑ Top';
-scrollTopBtn.style.display = 'none';
+Object.assign(scrollTopBtn.style, {
+    display: 'none',
+    position: 'fixed',
+    bottom: '20px',
+    right: '20px',
+    backgroundColor: '#6e8784',
+    color: '#fff',
+    border: 'none',
+    borderRadius: '50%',
+    width: '40px',
+    height: '40px',
+    justifyContent: 'center',
+    alignItems: 'center',
+    cursor: 'pointer',
+    zIndex: '1000',
+    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.2)',
+});
+
 document.body.appendChild(scrollTopBtn);
 
 window.addEventListener('scroll', () => {
-    scrollTopBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+    scrollTopBtn.style.display = window.scrollY > 300 ? 'flex' : 'none';
 });
 
 scrollTopBtn.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 });
