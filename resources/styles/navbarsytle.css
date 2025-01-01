@@ -27,6 +27,27 @@ nav a {
     font-weight: bold;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-buttons button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-buttons button:hover {
+    background-color: #555;
+    color: #ddd;
+}
 
 nav a:hover {
     background-color: #f0f0f0; /* Fundo cinza claro ao passar o mouse */
@@ -97,4 +118,28 @@ nav a:hover {
         flex-direction: column; /* Organiza as colunas verticalmente */
         align-items: center;
     }
+}
+
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: none; /* Inicialmente escondido */
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#scroll-to-top:hover {
+    background-color: #555;
+    transform: scale(1.1); /* Efeito ao passar o mouse */
 }

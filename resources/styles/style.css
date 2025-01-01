@@ -25,6 +25,35 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
+body.dark-mode {
+    --secondary-color: #1e1e1e;
+    --dark-text: #ffffff; 
+}
+
+.dark-mode .news-item {
+    background-color: #444;
+    color: #eee;
+}
+.dark-mode .upcoming-matches {
+    background-color: #555;
+    border: 1px solid #888;
+}
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode h3, 
+.dark-mode p, 
+.dark-mode span {
+    color: #ffffff; /* Deixa o texto branco */
+}
+
+.dark-mode a {
+    color: #ffcc00; /* Deixa os links em amarelo ou outra cor contrastante */
+}
+
+
+
+
+
 .content {
     padding: 20px;
 }
