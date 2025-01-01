@@ -143,3 +143,49 @@ nav a:hover {
     background-color: #555;
     transform: scale(1.1); /* Efeito ao passar o mouse */
 }
+
+/*inverter*/
+.header.inverted {
+    background-color: #333; /* Fundo escuro */
+    color: #fff; /* Texto claro */
+}
+
+.header.inverted nav a {
+    color: #fff; /* Texto claro */
+}
+
+.header.inverted nav a:hover {
+    background-color: #555; /* Fundo mais claro */
+    color: #ddd; /* Texto mais claro */
+}
+
+.header.inverted .nav-buttons button {
+    background-color: #fff;
+    color: #333;
+}
+
+.header.inverted .nav-buttons button:hover {
+    background-color: #ddd;
+    color: #000;
+}
+
+body.inverted .footer {
+    background-color: #222; /* Fundo escuro */
+    color: #f8f8f8; /* Texto claro */
+    border-top: 1px solid #444; /* Linha separadora mais escura */
+}
+
+body.inverted .footer h4 {
+    color: #fff; /* Títulos em branco */
+}
+
+body.inverted .footer p, 
+body.inverted .footer a {
+    color: #ccc; /* Texto e links com cor clara */
+}
+
+body.inverted .footer a:hover {
+    color: #fff; /* Cor branca no hover */
+    text-decoration: underline; /* Mantém o sublinhado no hover */
+}
+

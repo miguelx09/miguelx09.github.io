@@ -1,10 +1,10 @@
 
 :root {
-    --primary-color: #ff9800; /* Laranja para elementos interativos */
-    --secondary-color: #ffffff; /* Branco para cartões e textos */
-    --accent-color: #ffd700; /* Dourado para detalhes e destaque */
-    --dark-bg: #2c003e; /* Roxo escuro de fundo */
-    --dark-text: #f4f4f4; /* Texto claro */
+    --primary-color: #ff9800; 
+    --secondary-color: #ffffff; 
+    --accent-color: #ffd700; 
+    --dark-bg: #2c003e; 
+    --dark-text: #f4f4f4; 
     --font-size-base: 1rem;
     --spacing-base: 12px;
     --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -49,7 +49,6 @@ body.dark-mode {
 .dark-mode a {
     color: #ffcc00; /* Deixa os links em amarelo ou outra cor contrastante */
 }
-
 
 
 

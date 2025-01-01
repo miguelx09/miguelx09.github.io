@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #6e8784;
+    background-color:#2c003e;
     color: #333;
 }
 
@@ -293,4 +293,44 @@ table {
     cursor: pointer;
 }
 
+body.inverted {
+    background-color: #1e1e1e; /* Fundo invertido */
+}
 
+body.inverted .liga-title {
+    color: #ddd;
+}
+body.inverted .liga-title {
+    color: #ddd;
+}
+
+
+body.inverted .legenda table {
+    background-color: #2a2a2a;
+}
+body.inverted .legenda th {
+    color: #ddd;
+}
+body.inverted .legenda th {
+    color: #ddd;
+}
+
+body.inverted .header-section{
+    background-color: black;
+}
+
+body.inverted .liga-year {
+    color: white;
+}
+
+body.inverted .scoreboard-portugal tbody th{
+    color:#000000;
+}
+
+body.inverted .scoreboard-portugal tbody td {
+    color: #ffffff;
+}
+
+body.inverted .scoreboard-portugal {
+    background-color: #000000; 
+}
