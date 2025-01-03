@@ -37,8 +37,9 @@ p{
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 20px;
-  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 #theme-switch svg{
   fill: var(--primary-color);
