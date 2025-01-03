@@ -135,7 +135,7 @@ main {
     background-color: #d32f2f; 
 }
 
-/* Media Queries for responsiveness */
+
 @media (max-width: 768px) {
     .liga-container {
         gap: 10px;
@@ -155,7 +155,7 @@ main {
     }
 
     .popup-content {
-        width: 90%;   /* Makes popup width narrower on tablets */
+        width: 90%;
     }
 }
 
@@ -170,8 +170,8 @@ main {
 
     .liga-container {
         gap: 10px;
-        overflow-x: scroll;  /* Keeps horizontal scroll on mobile */
-        -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
     }
 
     .club-item {

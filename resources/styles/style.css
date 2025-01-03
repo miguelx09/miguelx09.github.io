@@ -25,34 +25,6 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-body.dark-mode {
-    --secondary-color: #1e1e1e;
-    --dark-text: #ffffff; 
-}
-
-.dark-mode .news-item {
-    background-color: #444;
-    color: #eee;
-}
-.dark-mode .upcoming-matches {
-    background-color: #555;
-    border: 1px solid #888;
-}
-.dark-mode h1, 
-.dark-mode h2, 
-.dark-mode h3, 
-.dark-mode p, 
-.dark-mode span {
-    color: #ffffff;
-}
-
-.dark-mode a {
-    color: #ffcc00;
-}
-
-
-
-
 .content {
     padding: 20px;
 }
@@ -65,7 +37,7 @@ body.dark-mode {
 }
 
 .main-news, .news-item {
-    background-color: var(--secondary-color); /* Cartões brancos */
+    background-color: var(--secondary-color);
     box-shadow: var(--box-shadow);
     border-radius: 8px;
     padding: var(--spacing-base);
@@ -121,7 +93,6 @@ body.dark-mode {
     background-color: var(--secondary-color); 
     border-radius: 10px;
 }
-/*dar fix na cor do container das sec news*/
 
 .news-item {
     flex: 1; 
@@ -179,7 +150,7 @@ body.dark-mode {
 .upcoming-matches h2 {
     font-size: 1.8rem;
     margin-bottom: 15px;
-    color: var(--accent-color); /* Dourado para destaque */
+    color: var(--accent-color);
     text-align: center;
 }
 
