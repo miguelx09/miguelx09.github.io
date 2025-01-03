@@ -1,195 +1,194 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #6e8784;
+  font-family: Arial, sans-serif;
+  background-color: #6e8784;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
-    flex: 1;
+  flex: 1;
 }
 
 .content {
-    padding: 20px;
-    justify-items: center;
+  padding: 20px;
+  justify-items: center;
 }
 
 .news-title {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #333;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
 }
 
 .liga-container {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start; 
-    gap: 20px;
-    padding: 10px;
-    margin: 0 auto;
-    max-width: 100%;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    background-color: #332b25bc;
-    border-radius: 10px;
-    -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  background-color: #332b25bc;
+  border-radius: 10px;
+  -webkit-overflow-scrolling: touch;
 }
 
 .club-item {
-    text-align: center;
-    background-color: #f9f9f9;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    flex-shrink: 0;
-    width: 100px; 
-    height: 120px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  width: 100px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 
 .club-item:hover {
-    transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 .club-logo {
-    width: 60%; 
-    height: auto;
-    object-fit: contain; 
-    margin-bottom: 10px;
-    cursor: pointer;
+  width: 60%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .club-logo {
-    width: 100%;
-    max-width: 40px;
-    height: auto;
-    display: block; 
-    margin: 0 auto;
-    cursor: pointer;
+  width: 100%;
+  max-width: 40px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
 }
 
 .popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-    justify-content: center;
-    align-items: center;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
 }
 
 .popup:target {
-    display: flex;
+  display: flex;
 }
 
 .popup-content {
-    background: #ffffff;
-    color: #333;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    width: 80%;
-    text-align: center;
+  background: #ffffff;
+  color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  text-align: center;
 }
 
 .popup-content img {
-    max-width: 100%; 
-    height: auto;      
-    object-fit: contain;
-    margin-bottom: 10px; 
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 10px;
 }
 
 .close-button {
-    display: inline-block;
-    margin-top: 10px;
-    text-decoration: none;
-    font-size: 16px;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    background-color: #f44336;
-    cursor: pointer;
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f44336;
+  cursor: pointer;
 }
 
 .close-button:hover {
-    background-color: #d32f2f; 
+  background-color: #d32f2f;
 }
 
-
 @media (max-width: 768px) {
-    .liga-container {
-        gap: 10px;
-    }
+  .liga-container {
+    gap: 10px;
+  }
 
-    .club-item {
-        width: 80px;
-        height: 100px;
-    }
+  .club-item {
+    width: 80px;
+    height: 100px;
+  }
 
-    .club-logo {
-        max-width: 35px;
-    }
-    
-    .news-title {
-        font-size: 0.9rem;
-    }
+  .club-logo {
+    max-width: 35px;
+  }
 
-    .popup-content {
-        width: 90%;
-    }
+  .news-title {
+    font-size: 0.9rem;
+  }
+
+  .popup-content {
+    width: 90%;
+  }
 }
 
 @media (max-width: 480px) {
-    .content {
-        padding: 10px;
-    }
+  .content {
+    padding: 10px;
+  }
 
-    .news-title {
-        font-size: 0.8rem;
-    }
+  .news-title {
+    font-size: 0.8rem;
+  }
 
-    .liga-container {
-        gap: 10px;
-        overflow-x: scroll;
-        -webkit-overflow-scrolling: touch;
-    }
+  .liga-container {
+    gap: 10px;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
 
-    .club-item {
-        width: 70px;
-        height: 90px;
-    }
+  .club-item {
+    width: 70px;
+    height: 90px;
+  }
 
-    .club-logo {
-        max-width: 30px;
-    }
+  .club-logo {
+    max-width: 30px;
+  }
 
-    .popup-content {
-        width: 90%;
-        padding: 15px;
-    }
+  .popup-content {
+    width: 90%;
+    padding: 15px;
+  }
 
-    .close-button {
-        padding: 8px 12px;
-        font-size: 14px;
-    }
+  .close-button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
 }
