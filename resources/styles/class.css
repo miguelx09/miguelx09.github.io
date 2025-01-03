@@ -200,6 +200,21 @@ table {
     font-size: 0.9em;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); 
     border: none;  
+    padding:15px;
+}
+
+.forms span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px; 
+    height: 25px;
+    border-radius: 8px; 
+    font-weight: bold;
+    font-size: 0.9em;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); 
+    border: none;  
+    padding:15px;
 }
 
 .form span.win {
@@ -236,68 +251,68 @@ table {
     cursor: pointer;
 }
 
-.form span.champ-phase {
+.forms span.champ-phase {
     background-color: rgb(0, 70, 130);
     color: #ffffff;
     border: 1px solid rgb(0, 70, 130); 
 }
 
-.form span.champ-phase:hover { 
+.forms span.champ-phase:hover { 
     transform: scale(1.1);
     transition: transform 0.3s ease;
     cursor: pointer;
 }
 
-.form span.champ-qua {
+.forms span.champ-qua {
     background-color: rgb(30, 168, 236);
     color: #ffffff;
     border: 1px solid rgb(30, 168, 236); 
 }
-.form span.champ-qua:hover { 
+.forms span.champ-qua:hover { 
     transform: scale(1.1);
     transition: transform 0.3s ease;
     cursor: pointer;
 }
 
-.form span.eu-league {
+.forms span.eu-league {
     background-color: rgb(127, 0, 41);
     color: #ffffff;
     border: 1px solid rgb(127, 0, 41); 
 }
-.form span.eu-league:hover { 
+.forms span.eu-league:hover { 
     transform: scale(1.1);
     transition: transform 0.3s ease;
     cursor: pointer;
 }
 
-.form span.conf-league {
+.forms span.conf-league {
     background-color: rgb(184, 134, 11);
     color: #ffffff;
     border: 1px solid rgb(184, 134, 11); 
 }
-.form span.conf-league:hover { 
+.forms span.conf-league:hover { 
     transform: scale(1.1);
     transition: transform 0.3s ease;
     cursor: pointer;
 }
 
-.form span.liga-desprom {
+.forms span.liga-desprom {
     background-color: rgb(189, 0, 0);
     color: #ffffff;
     border: 1px solid rgb(189, 0, 0); 
 }
-.form span.liga-desprom:hover { 
+.forms span.liga-desprom:hover { 
     transform: scale(1.1);
     transition: transform 0.3s ease;
     cursor: pointer;
 }
 
-.form span.liga2-desprom {
+.forms span.liga2-desprom {
     background-color: rgb(255, 65, 65);
     color: #ffffff;
     border: 1px solid rgb(255, 65, 65); 
 }
-.form span.liga2-desprom:hover { 
+.forms span.liga2-desprom:hover { 
     transform: scale(1.1);
     transition: transform 0.3s ease;
     cursor: pointer;
@@ -400,9 +415,10 @@ body.inverted .scoreboard-portugal {
 }
 
 @media screen and (max-width: 768px) {
-    td:nth-child(10),
+    td:nth-child(12),
     th:nth-child(10) {
         display: none;
+        margin-right: 10px;
     }
 
     .form {
@@ -410,6 +426,10 @@ body.inverted .scoreboard-portugal {
     }
     .tabela-colunas-bordas {
         display:none;
+    }
+    .scoreboard-portugal td {
+        font-size: small;
+        padding: 12px;
     }
    .borda-azul {
     display:none;
@@ -422,6 +442,9 @@ body.inverted .scoreboard-portugal {
     }
     .borda-vermelho {
      display:none;
+    }
+    .remove {
+        display: none;
     }
 }
     
