@@ -40,6 +40,10 @@ p{
   bottom: 20px;
   left: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+#theme-switch:hover{
+  transform: scale(1.1);
 }
 #theme-switch svg{
   fill: var(--primary-color);
@@ -56,10 +60,93 @@ p{
 
 #scroll-to-top{
   background-color: var(--base-color);
-  transform: scale(1.1);
+  transform: scale(1);
 }
 
 #scroll-to-top:hover {
   background-color: var(--base-variant);
   transform: scale(1.1);
+}
+
+.darkmode .header{
+  background-color: var(--base-variant);
+  color: var(--text-color);
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.darkmode nav a{
+  color: var(--text-color) !important;
+}
+
+.darkmode .footer {
+  background-color: var(--base-variant);
+  color: var(--text-color);
+  border-top: 1px solid var(--primary-color);
+}
+
+.darkmode .footer p, .darkmode .footer a, .darkmode .footer h4{
+  color: var(--text-color) !important;
+}
+
+.darkmode .liga-container{
+  background-color: var(--base-variant);
+  color: var(--text-color);
+  border: 1px solid var(--primary-color);
+}
+
+.darkmode .upcoming-matches{
+  background-color: var(--base-variant);
+  color: var(--text-color);
+  border: 1px solid var(--primary-color);
+}
+
+.darkmode .club{
+  background: var(--base-variant);
+  border: 1px solid var(--primary-color);
+}
+
+.darkmode .club-points{
+  background: var(--primary-color);
+  color: var(--text-color);
+}
+
+.darkmode .match{
+  background: var(--base-variant);
+  border: 1px solid var(--primary-color);
+}
+
+.darkmode .club > *, .match > *{
+  color: var(--text-color);
+}
+
+.darkmode .main-news{
+  background-color: var(--base-variant);
+  color: var(--text-color);
+  border-bottom: 1px solid var(--primary-color);
+  border-top: 1px solid var(--primary-color);
+}
+
+.darkmode .secondary-news{
+  background-color: var(--base-variant);
+  color: var(--text-color);
+  border-bottom: 1px solid var(--primary-color);
+  border-top: 1px solid var(--primary-color);
+}
+
+.darkmode .news-item{
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: 1px solid var(--primary-color);
+}
+
+.darkmode .news-title{
+  color: var(--text-color);
+}
+
+.darkmode .news-summary{
+  color: var(--secondary-text);
+}
+
+.darkmode .nav a:hover{
+  color: var(--accent-color);
 }
