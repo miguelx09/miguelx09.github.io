@@ -20,7 +20,6 @@ main {
     flex: 1;
 }
 
-/* Conteúdo */
 .content {
     padding: 20px;
     justify-items: center;
@@ -40,11 +39,11 @@ main {
     padding: 10px;
     margin: 0 auto;
     max-width: 100%;
-    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-x: auto;
     scroll-behavior: smooth;
     background-color: #332b25bc;
     border-radius: 10px;
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling for mobile */
+    -webkit-overflow-scrolling: touch;
 }
 
 .club-item {

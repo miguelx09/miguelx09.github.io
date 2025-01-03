@@ -19,7 +19,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-size: var(--font-size-base);
-    background-color: var(--dark-bg); /* Fundo roxo escuro */
+    background-color: var(--dark-bg);
     color: var(--dark-text);
     line-height: 1.6;
     transition: background-color 0.3s, color 0.3s;
@@ -43,11 +43,11 @@ body.dark-mode {
 .dark-mode h3, 
 .dark-mode p, 
 .dark-mode span {
-    color: #ffffff; /* Deixa o texto branco */
+    color: #ffffff;
 }
 
 .dark-mode a {
-    color: #ffcc00; /* Deixa os links em amarelo ou outra cor contrastante */
+    color: #ffcc00;
 }
 
 

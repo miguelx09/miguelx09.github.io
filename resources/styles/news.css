@@ -85,10 +85,10 @@ body {
 }
 
 .news-image {
-    display: block; /* Ensure it respects block-level dimensions */
-    width: 100%; /* Make the image fill the width of the article */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 15px; /* Optional: Rounded corners */
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
 }
 
 .content article {

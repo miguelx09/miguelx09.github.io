@@ -10,7 +10,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Remove scroll horizontal */
+    overflow-x: hidden;
 }
 .header-section {
     display: flex;
@@ -64,15 +64,15 @@ table {
     z-index: -1;
     border-top: none;
     border-bottom: none;
-    width: 90%; /* Ajustado para 90% no geral */
-    max-width: 1200px; /* Largura máxima no desktop */
-    margin: 20px auto; /* Centraliza horizontalmente */
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
     font-size: 1em;
     border-collapse: collapse;
     background-color: #ffffff;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra para destaque */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 #scoreboard-portugal-header{
     padding: 15px;
@@ -304,7 +304,7 @@ table {
 }
 
 body.inverted {
-    background-color: #1e1e1e; /* Fundo invertido */
+    background-color: #1e1e1e;
 }
 
 body.inverted .liga-title {
@@ -400,13 +400,11 @@ body.inverted .scoreboard-portugal {
 }
 
 @media screen and (max-width: 768px) {
-    /* Oculta a coluna "Form" inteira, incluindo seu conteúdo */
     td:nth-child(10),
     th:nth-child(10) {
         display: none;
     }
 
-    /* Oculta a div .form e seu conteúdo */
     .form {
         display: none;
     }
