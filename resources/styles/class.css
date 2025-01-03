@@ -509,7 +509,7 @@ body.inverted .scoreboard-portugal {
     display: flex;
     align-items: center;
     margin-bottom: 5px;
-    margin-left: 65px;
+    margin-left: 27px;
 }
 
 .legenda-row .icon {
@@ -548,5 +548,5 @@ body.inverted .scoreboard-portugal {
     margin-top: 10px;
     font-size: 12px;
     color: #000000;
-    margin-left: 65px;
+    margin-left: 27px;
 }
