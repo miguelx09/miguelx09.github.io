@@ -1,115 +1,113 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  background-color: #6e8784;
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     background-color: #6e8784;
-    .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        background-color: #6e8784;
-    }
+  }
 }
 
 .content {
-    padding: 20px;
-    background-color: #ffffff;
+  padding: 20px;
+  background-color: #ffffff;
 }
 
 .content h1 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .content article {
-    margin-bottom: 20px;
-    background-color: #f9f9f9;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .content article:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .content article h2 {
-    font-size: 1.4rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #222;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #222;
 }
 
 .content article p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.5;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
 }
 
 .content article a {
-    display: inline-block;
-    margin-top: 10px;
-    font-size: 0.9rem;
-    color: #0066cc;
-    text-decoration: none;
-    font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .content article a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-
-
 @media (max-width: 768px) {
-    .header nav {
-        flex-direction: column;
-        gap: 10px;
-    }
+  .header nav {
+    flex-direction: column;
+    gap: 10px;
+  }
 
-    .content h1 {
-        font-size: 1.6rem;
-    }
+  .content h1 {
+    font-size: 1.6rem;
+  }
 
-    .footer .columns {
-        flex-direction: column;
-        align-items: center;
-    }
+  .footer .columns {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .news-image {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
 }
 
 .content article {
-    width: 100%;
-    max-width: 600px;
-    margin: 10px auto;
-    padding: 15px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.content p{
-    margin: 2.5%;
+.content p {
+  margin: 2.5%;
 }
 
 article {
-    width: max-content;
-    margin-bottom: 20px;
+  width: max-content;
+  margin-bottom: 20px;
 }
 article a {
-    display: block;
-    margin-top: 10px;
+  display: block;
+  margin-top: 10px;
 }

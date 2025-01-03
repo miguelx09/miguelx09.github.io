@@ -1,97 +1,96 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #2c003e;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  background-color: #2c003e;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 .header-section {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    background-color: #ffffff; 
-    border: 1px solid #ddd; 
-    border-radius: 8px; 
-    max-width: 800px; 
-    margin: 20px auto; 
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 20px auto;
 }
 
 .content {
-    display: flex;
-    align-items: center;
-    gap: 20px; 
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .liga-img img {
-    width: 80px; 
-    height: auto; 
-    border-radius: 5px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  width: 80px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .liga-title {
-    font-size: 28px; 
-    color: #333;
-    margin: 0; 
-    font-weight: bold; 
-    line-height: 1.2; 
+  font-size: 28px;
+  color: #333;
+  margin: 0;
+  font-weight: bold;
+  line-height: 1.2;
 }
 
 .liga-year {
-    font-size: 18px; 
-    color: #555; 
-    margin: 5px 0 0; 
-    font-weight: normal; 
+  font-size: 18px;
+  color: #555;
+  margin: 5px 0 0;
+  font-weight: normal;
 }
-
 
 table {
-    width: 100vw;
-    text-align: center;
-    margin-bottom: 100px;
-    border-radius: 8px; 
-    overflow: hidden; 
-    border-spacing: 0; 
+  width: 100vw;
+  text-align: center;
+  margin-bottom: 100px;
+  border-radius: 8px;
+  overflow: hidden;
+  border-spacing: 0;
 }
 .scoreboard-portugal {
-    z-index: 1;
-    border-top: none;
-    border-bottom: none;
-    width: 90%;
-    max-width: 1200px;
-    margin: 20px auto;
-    font-size: 1em;
-    border-collapse: collapse;
-    background-color: #ffffff;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  border-top: none;
+  border-bottom: none;
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  font-size: 1em;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
-#scoreboard-portugal-header{
-    padding: 15px;
-    padding-left: 20px;
-    background-color: #f1f3f4;
-    text-align: left;
-    color: #ffffff;
+#scoreboard-portugal-header {
+  padding: 15px;
+  padding-left: 20px;
+  background-color: #f1f3f4;
+  text-align: left;
+  color: #ffffff;
 }
 
-#ano{
-    font-weight: 600;
-    color: #4285f4;
+#ano {
+  font-weight: 600;
+  color: #4285f4;
 }
 .scoreboard-portugal th {
-    background-color: #b4b4b4;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    font-size: 1rem;
+  background-color: #b4b4b4;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 1rem;
 }
 .scoreboard-portugal td {
     font-weight: 400; 
@@ -102,435 +101,444 @@ table {
     font-size: 1.1em; 
 }
 
-.scoreboard-portugal img{
-    width: 25px;
+.scoreboard-portugal img {
+  width: 25px;
 }
-.scoreboard-portugal img:hover{
-    transform: scale(1.2);
-    transition: 0.3s;
-    cursor: pointer;
+.scoreboard-portugal img:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+  cursor: pointer;
 }
-.tabela-colunas-bordas{
-    border-top: none !important;
-}
-
-.titulo-clube{
-    width: 35%;
-    text-align: left;
+.tabela-colunas-bordas {
+  border-top: none !important;
 }
 
-.titulo-clube:hover{
-    text-decoration: underline;
-    cursor: pointer;
+.titulo-clube {
+  width: 35%;
+  text-align: left;
 }
-.titulo-clube:not(:hover){
-    text-decoration: none;
+
+.titulo-clube:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.titulo-clube:not(:hover) {
+  text-decoration: none;
 }
 .titulo-ultimas-cinco {
-    width: auto; 
-    padding: 10px; 
-    text-align: center;
-    vertical-align: middle; 
+  width: auto;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
 }
-.titulo-ultimas-cinco img{
-    width: 17px;
-}
-
-.titulo-clube, .borda-azul, .borda-verde, .borda-laranja, .borda-vermelho {
-    padding-left: 10px; 
-    text-align: left; 
-    height: auto;
-}
-.legenda table{
-    width: 40vw;
-    margin: 5px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #e9eaeb;
-    border-radius: 3px;
-    padding: 15px;
-    text-align: left;
-    background-color: #00141e;
+.titulo-ultimas-cinco img {
+  width: 17px;
 }
 
-.legenda th{
-    border-top: none;
-    font-size: 1.1em;
-    color: #ffffff;
-    font-weight: 700;
+.titulo-clube,
+.borda-azul,
+.borda-verde,
+.borda-laranja,
+.borda-vermelho {
+  padding-left: 10px;
+  text-align: left;
+  height: auto;
+}
+.legenda table {
+  width: 40vw;
+  margin: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #e9eaeb;
+  border-radius: 3px;
+  padding: 15px;
+  text-align: left;
+  background-color: #00141e;
 }
 
-.legenda img{
-    width: 10px;
+.legenda th {
+  border-top: none;
+  font-size: 1.1em;
+  color: #ffffff;
+  font-weight: 700;
 }
 
-.legenda td{
-    border-top: none;
-    font-size: 1em;
-    height: 3px;
-    width: 50%;
+.legenda img {
+  width: 10px;
+}
+
+.legenda td {
+  border-top: none;
+  font-size: 1em;
+  height: 3px;
+  width: 50%;
 }
 
 .form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px; 
-    font-size: 1.2em; 
-    margin: 5px auto; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2em;
+  margin: 5px auto;
 }
 
 .scoreboard-portugal .form button {
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    color: #fff;
-    font-size: 0.9rem;
-    font-weight: bold;
-    cursor: default;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: default;
 }
 .form span {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 25px; 
-    height: 25px;
-    border-radius: 8px; 
-    font-weight: bold;
-    font-size: 0.9em;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); 
-    border: none;  
-    padding:15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.9em;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  border: none;
+  padding: 15px;
 }
 
 .forms span {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 25px; 
-    height: 25px;
-    border-radius: 8px; 
-    font-weight: bold;
-    font-size: 0.9em;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); 
-    border: none;  
-    padding:15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.9em;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  border: none;
+  padding: 15px;
 }
 
 .form span.win {
-    background-color: #00a83f;
-    color: #ffffff;
-    border: 1px solid #00a83f; 
+  background-color: #00a83f;
+  color: #ffffff;
+  border: 1px solid #00a83f;
 }
 
-.form span.win:hover { 
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-    cursor: pointer;
+.form span.win:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .form span.draw {
-    background-color: #f3a000;
-    color: #ffffff;
-    border: 1px solid #f3a000; 
+  background-color: #f3a000;
+  color: #ffffff;
+  border: 1px solid #f3a000;
 }
-.form span.draw:hover { 
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-    cursor: pointer;
+.form span.draw:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .form span.loss {
-    background-color: #dc0000;
-    color: #ffffff;
-    border: 1px solid #dc0000; 
+  background-color: #dc0000;
+  color: #ffffff;
+  border: 1px solid #dc0000;
 }
-.form span.loss:hover { 
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-    cursor: pointer;
+.form span.loss:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .forms span.champ-phase {
-    background-color: #002d5c;
-    color: #ffffff;
-    border: 1px solid #002d5c; 
+  background-color: #002d5c;
+  color: #ffffff;
+  border: 1px solid #002d5c;
 }
 
-.forms span.champ-phase:hover { 
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-    cursor: pointer;
+.forms span.champ-phase:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .forms span.champ-qua {
-    background-color:  #007bff;
-    color: #ffffff;
-    border: 1px solid  #007bff; 
+  background-color: #007bff;
+  color: #ffffff;
+  border: 1px solid #007bff;
 }
-.forms span.champ-qua:hover { 
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-    cursor: pointer;
+.forms span.champ-qua:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .forms span.eu-league {
-    background-color: rgb(127, 0, 41);
-    color: #ffffff;
-    border: 1px solid rgb(127, 0, 41); 
+  background-color: rgb(127, 0, 41);
+  color: #ffffff;
+  border: 1px solid rgb(127, 0, 41);
 }
-.forms span.eu-league:hover { 
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-    cursor: pointer;
+.forms span.eu-league:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .forms span.conf-league {
-    background-color: rgb(184, 134, 11);
-    color: #ffffff;
-    border: 1px solid rgb(184, 134, 11); 
+  background-color: rgb(184, 134, 11);
+  color: #ffffff;
+  border: 1px solid rgb(184, 134, 11);
 }
-.forms span.conf-league:hover { 
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-    cursor: pointer;
+.forms span.conf-league:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .forms span.liga-desprom {
-    background-color: rgb(189, 0, 0);
-    color: #ffffff;
-    border: 1px solid rgb(189, 0, 0); 
+  background-color: rgb(189, 0, 0);
+  color: #ffffff;
+  border: 1px solid rgb(189, 0, 0);
 }
-.forms span.liga-desprom:hover { 
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-    cursor: pointer;
+.forms span.liga-desprom:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .forms span.liga2-desprom {
-    background-color:#ffcccc;
-    color: #ffffff;
-    border: 1px solid #ffcccc; 
+  background-color: #ffcccc;
+  color: #ffffff;
+  border: 1px solid #ffcccc;
 }
-.forms span.liga2-desprom:hover { 
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-    cursor: pointer;
+.forms span.liga2-desprom:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 body.inverted {
-    background-color: #1e1e1e;
+  background-color: #1e1e1e;
 }
 
 body.inverted .liga-title {
-    color: #ddd;
+  color: #ddd;
 }
 body.inverted .liga-title {
-    color: #ddd;
+  color: #ddd;
 }
-
 
 body.inverted .legenda table {
-    background-color: #2a2a2a;
+  background-color: #2a2a2a;
 }
 body.inverted .legenda th {
-    color: #ddd;
+  color: #ddd;
 }
 body.inverted .legenda th {
-    color: #ddd;
+  color: #ddd;
 }
 
-body.inverted .header-section{
-    background-color: black;
+body.inverted .header-section {
+  background-color: black;
 }
 
 body.inverted .liga-year {
-    color: white;
+  color: white;
 }
 
-body.inverted .scoreboard-portugal tbody th{
-    color:#000000;
+body.inverted .scoreboard-portugal tbody th {
+  color: #000000;
 }
 
 body.inverted .scoreboard-portugal tbody td {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 body.inverted .scoreboard-portugal {
-    background-color: #000000; 
+  background-color: #000000;
 }
-
-
 
 @media (max-width: 768px) {
-   
-    .scoreboard-portugal .form-container {
-        padding: 10px;  
-    }
+  .scoreboard-portugal .form-container {
+    padding: 10px;
+  }
 
-    
-    .scoreboard-portugal input[type="text"],
-    .scoreboard-portugal select,
-    .scoreboard-portugal button {
-        width: 100%;  
-        font-size: 14px;  
-    }
+  .scoreboard-portugal input[type="text"],
+  .scoreboard-portugal select,
+  .scoreboard-portugal button {
+    width: 100%;
+    font-size: 14px;
+  }
 }
 .scoreboard-portugal .form-container {
-    width: 100%;  
-    padding: 15px;  
-    box-sizing: border-box;  
-    overflow: hidden;  
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .scoreboard-portugal form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 15px;  
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
 }
 
 .scoreboard-portugal input[type="text"],
 .scoreboard-portugal select,
 .scoreboard-portugal button {
-    width: 100%;  
-    padding: 10px;
-    font-size: 16px;
-    box-sizing: border-box;  
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 
-
 .scoreboard-portugal button {
-    background-color: #4CAF50;
-    color: white;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 12px;
 }
 
 .scoreboard-portugal button:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
 
 @media screen and (max-width: 768px) {
+    td:nth-child(12),
     th:nth-child(10) {
         display: none;
+        margin-right: 10px;
     }
-    
 
     .form {
         display: none;
     }
-
     .tabela-colunas-bordas {
-        display: none;
+        display:none;
     }
-
     .scoreboard-portugal td {
         font-size: small;
         padding: 12px;
     }
-
-    .borda-azul,
-    .borda-laranja,
-    .borda-verde,
+   .borda-azul {
+    display:none;
+   }
+   .borda-laranja {
+    display:none;
+   }
+    .borda-verde {
+     display:none;
+    }
     .borda-vermelho {
+     display:none;
+    }
+    .remove {
         display: none;
     }
 }
+
+
+
+
+/*tooltip test*/ 
 .tooltip {
-    position: relative;
-    cursor: pointer;
+  position: relative;
+  cursor: pointer;
 }
 
 .tooltip::after {
     content: attr(data-tooltip);
     position: absolute;
-    z-index: 9999; 
+    z-index: 9999; /* Garante que estará acima de outros elementos */
     top: 50%;
     left: 100%;
     transform: translateY(-50%);
     background-color: #333;
     color: #fff;
-    padding: 3px 8px; 
-    border-radius: 3px; 
-    font-size: 12px; 
+    padding: 3px 8px; /* Ajusta o padding para deixar a tooltip menor */
+    border-radius: 3px; /* Ajusta o border-radius para deixar a tooltip menor */
+    font-size: 12px; /* Ajusta o tamanho da fonte para deixar a tooltip menor */
     white-space: nowrap;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s, transform 0.3s;
-    margin-left: 10px; 
+    margin-left: 10px; /* Adiciona um espaço entre o tooltip e o elemento */
 }
 
 .tooltip:hover::after {
-    opacity: 1;
-    transform: translateY(-50%);
+  opacity: 1;
+  transform: translateY(-50%);
 }
 
 .tooltip[data-tooltip]:hover::after {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 .tooltip[data-tooltip]:hover::before {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 .legenda {
-    text-align: left;
-    font-size: 14px;
-    padding-top: 30px !important;
+  text-align: left;
+  font-size: 14px;
+  padding-top: 30px !important;
 }
 
 .legenda-container {
-    margin-left: 12px; 
+    margin-left: 12px; /* Alinhamento da legenda à altura dos números */
 }
 
 .legenda-row {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px;
-    margin-left: 27px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  margin-left: 27px;
 }
 
 .legenda-row .icon {
-    width: 12px;
-    height: 12px;
-    border-radius: 4px;
-    margin-right: 8px;
-    
+  width: 12px;
+  height: 12px;
+  border-radius: 4px;
+  margin-right: 8px;
 }
 
 .icon-azul-escuro {
-    background-color: #002d5c; 
+    background-color: #002d5c; /* Azul escuro */
 }
 
 .icon-azul-claro {
-    background-color: #007bff;
+    background-color: #007bff; /* Azul claro */
 }
 
 .icon-vermelho {
-    background-color: #ff4d4d; 
+    background-color: #ff4d4d; /* Vermelho */
 }
 
 .icon-laranja {
-    background-color:rgb(184, 134, 11); 
+    background-color:rgb(184, 134, 11); /* Laranja */
 }
 
 .icon-amarelo {
-    background-color:  rgb(127, 0, 41); 
+    background-color:  rgb(127, 0, 41); /* Amarelo */
 }
 
 .icon-vermelho-claro {
-    background-color: #ffcccc; 
+    background-color: #ffcccc; /* Vermelho claro */
 }
 
 .nota-explicativa {
-    margin-top: 10px;
-    font-size: 12px;
-    color: #000000;
-    margin-left: 27px;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #000000;
+  margin-left: 27px;
 }
