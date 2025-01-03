@@ -61,7 +61,7 @@ table {
     border-spacing: 0; 
 }
 .scoreboard-portugal {
-    z-index: -1;
+    z-index: 1;
     border-top: none;
     border-bottom: none;
     width: 90%;
@@ -447,4 +447,46 @@ body.inverted .scoreboard-portugal {
         display: none;
     }
 }
-    
+
+
+
+
+/*tooltip test*/ 
+.tooltip {
+    position: relative;
+    cursor: pointer;
+}
+
+.tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    z-index: 9999; /* Garante que estará acima de outros elementos */
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 3px 8px; /* Ajusta o padding para deixar a tooltip menor */
+    border-radius: 3px; /* Ajusta o border-radius para deixar a tooltip menor */
+    font-size: 12px; /* Ajusta o tamanho da fonte para deixar a tooltip menor */
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s, transform 0.3s;
+    margin-left: 10px; /* Adiciona um espaço entre o tooltip e o elemento */
+}
+
+.tooltip:hover::after {
+    opacity: 1;
+    transform: translateY(-50%);
+}
+
+.tooltip[data-tooltip]:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip[data-tooltip]:hover::before {
+    visibility: visible;
+    opacity: 1;
+}
