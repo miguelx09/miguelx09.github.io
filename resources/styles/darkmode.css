@@ -207,7 +207,7 @@ h1, h2{
 .darkmode .header-section{
   background-color: var(--base-variant);
   color: var(--text-color);
-  box-shadow: 0px 4px 23px 8px rgba(125, 125, 125, 0.2) !important;
+  box-shadow: 0px 4px 23px 8px rgba(125, 125, 125, 0.05) !important;
 }
 
 .darkmode .liga-year, .nota-explicativa{
@@ -217,7 +217,7 @@ h1, h2{
 .darkmode .scoreboard-portugal{
   background-color: var(--base-variant);
   color: var(--text-color);
-  box-shadow: 0px 4px 23px 8px rgba(125, 125, 125, 0.2) !important;
+  box-shadow: 0px 4px 23px 8px rgba(125, 125, 125, 0.05) !important;
 }
 
 .darkmode main > .content{
