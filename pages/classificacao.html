@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="../resources/styles/class.css" />
     <link rel="stylesheet" href="/resources/styles/loader.css" />
     <link rel="stylesheet" href="/resources/styles/darkmode.css">
-    <script src="/resources/js/loader.js"></script>
-    <script src="/resources/js/table.js"></script>
+
   </head>
+
   <body>
     <div id="loader" class="loader">
         <div class="spinner"></div>
@@ -23,7 +23,7 @@
         </div>
         
         <nav>
-            <a href="index.html">Início</a>
+            <a href="/index.html">Início</a>
             <a href="/pages/news.html">Notícias</a>
             <a href="/pages/clubs.html">Clubes</a>
             <a href="/pages/classificacao.html">Classificacão</a>
@@ -60,11 +60,11 @@
     
 
 <div class="container">
-    <div>
+    
         <table class="scoreboard-portugal">
-           
-            <tr>
-                <th class="tabela-colunas-bordas"></th>
+           <thead>
+            <tr>    
+                <th id ="sort-number" class="asc"></th>
                 <th colspan="2" class="titulo-clube">Clubes</th>
                 <th>PJ</th>
                 <th>V</th>
@@ -74,15 +74,16 @@
                 <th>DG</th>
                 <th>P</th>
                 <th>Forma</th>  
-                <th class="tabela-colunas-bordas"></th>
+                
             </tr>
+        </thead>
+        <tbody>
             <tr>
                
                 <td class="forms">
                     <span class="champ-phase tooltip" data-tooltip="Qualificado - Liga dos Campões (Fase de liga)">1.</span></td>
                 <td><img src="../resources/images/clubs/sporting.png" alt="Sporting"></td>
                 <td class="titulo-clube">Sporting</td>
-                
                 <td>11</td>
                 <td>11</td>
                 <td>0</td>
@@ -96,8 +97,8 @@
                     <span class="win">V</span>
                     <span class="win">V</span>
                     <span class="win">V</span>
-                </td> 
-                <td class="tabela-colunas-bordas"></td>
+                </td>  
+                
             </tr>
             <tr>
                 
@@ -120,7 +121,7 @@
                     <span class="win">V</span>
                     <span class="win">V</span>
                 </td> 
-                <td class="tabela-colunas-bordas"></td>
+               
             </tr>
             <tr>
                 
@@ -143,7 +144,7 @@
                     <span class="win">V</span>
                     <span class="win">V</span>
                 </td>  
-                <td class="tabela-colunas-bordas"></td>
+             
             </tr>
             <tr>
                
@@ -166,7 +167,7 @@
                     <span class="win">V</span>
                     <span class="win">V</span>
                 </td>
-                <td class="tabela-colunas-bordas"></td>
+            
             </tr>
             <tr>
                 
@@ -188,7 +189,7 @@
                     <span class="loss">D</span>
                     <span class="win">V</span>
                 </td> 
-                <td class="tabela-colunas-bordas"></td>
+            
             </tr>
             <tr>
                
@@ -210,7 +211,7 @@
                     <span class="draw">E</span>
                     <span class="draw">E</span>
                 </td> 
-                <td class="tabela-colunas-bordas"></td>
+               
             </tr>
             <tr>
                 
@@ -232,7 +233,7 @@
                     <span class="draw">E</span>
                     <span class="draw">E</span>
                 </td> 
-                <td class="tabela-colunas-bordas"></td>
+               
             </tr>
             <tr>
                 
@@ -254,7 +255,7 @@
                     <span class="win">V</span>
                     <span class="loss">D</span>
                 </td> 
-                <td class="tabela-colunas-bordas"></td>
+                
             </tr>
             <tr>
                 
@@ -276,7 +277,7 @@
                     <span class="loss">D</span>
                     <span class="draw">E</span>
                 </td> 
-                <td class="tabela-colunas-bordas"></td>
+                
             </tr>
             <tr>
                 
@@ -298,7 +299,7 @@
                     <span class="draw">E</span>
                     <span class="loss">D</span>
                 </td> 
-                <td class="tabela-colunas-bordas"></td>
+               
             </tr>
             <tr>
                
@@ -320,7 +321,7 @@
                     <span class="win">V</span>
                     <span class="loss">D</span>
                 </td> 
-                <td class="tabela-colunas-bordas"></td>
+               
             </tr>
             <tr>
                 
@@ -342,7 +343,7 @@
                     <span class="loss">D</span>
                     <span class="loss">D</span>
                 </td>  
-                <td class="tabela-colunas-bordas"></td>
+               
             </tr>
             <tr>
                 
@@ -364,7 +365,7 @@
                     <span class="draw">E</span>
                     <span class="draw">E</span>
                 </td>
-                <td class="tabela-colunas-bordas"></td>
+               
             </tr>
             <tr>
                 
@@ -386,7 +387,7 @@
                     <span class="draw">E</span>
                     <span class="loss">D</span>
                 </td> 
-                <td class="tabela-colunas-bordas"></td>
+              
             </tr>
             <tr>
                 
@@ -408,7 +409,7 @@
                     <span class="loss">D</span>
                     <span class="win">V</span>
                 </td> 
-                <td class="tabela-colunas-bordas"></td>
+                
             </tr>
             <tr>
                 
@@ -431,7 +432,7 @@
                     <span class="draw">E</span>
                     <span class="loss">D</span>
                 </td> 
-                <td class="tabela-colunas-bordas"></td>
+                
             </tr>
             <tr>
                
@@ -454,7 +455,7 @@
                     <span class="draw">E</span>
                     <span class="loss">D</span>
                 </td> 
-                <td class="tabela-colunas-bordas"></td>
+                
             </tr>
             <tr>
                 
@@ -477,8 +478,8 @@
                     <span class="win">V</span>
                     <span class="draw">E</span>
                 </td> 
-                <td class="tabela-colunas-bordas"></td>
             </tr>
+        </tbody>
             <tr>
                 <td colspan="9" class="legenda">
                     <div class="legenda-row">
@@ -544,6 +545,8 @@
 
     <script src="/resources/js/toTop.js"></script>
     <script src="/resources/js/darkmode.js"></script> 
-    
+    <script src="/resources/js/loader.js"></script>
+    <script src="/resources/js/table.js"></script>
+        
 </body>
 </html>
