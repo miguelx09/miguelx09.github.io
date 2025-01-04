@@ -192,7 +192,7 @@ table {
   border-radius: 8px;
   font-weight: bold;
   font-size: 0.9em;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   border: none;
   padding: 15px;
 }
@@ -206,7 +206,7 @@ table {
   border-radius: 8px;
   font-weight: bold;
   font-size: 0.9em;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   border: none;
   padding: 15px;
 }
@@ -312,47 +312,6 @@ table {
   cursor: pointer;
 }
 
-body.inverted {
-  background-color: #1e1e1e;
-}
-
-body.inverted .liga-title {
-  color: #ddd;
-}
-body.inverted .liga-title {
-  color: #ddd;
-}
-
-body.inverted .legenda table {
-  background-color: #2a2a2a;
-}
-body.inverted .legenda th {
-  color: #ddd;
-}
-body.inverted .legenda th {
-  color: #ddd;
-}
-
-body.inverted .header-section {
-  background-color: black;
-}
-
-body.inverted .liga-year {
-  color: white;
-}
-
-body.inverted .scoreboard-portugal tbody th {
-  color: #000000;
-}
-
-body.inverted .scoreboard-portugal tbody td {
-  color: #ffffff;
-}
-
-body.inverted .scoreboard-portugal {
-  background-color: #000000;
-}
-
 @media (max-width: 768px) {
   .scoreboard-portugal .form-container {
     padding: 10px;
@@ -434,7 +393,8 @@ body.inverted .scoreboard-portugal {
       margin-left: 9px !important;
     }
   
-} 
+}
+
 .tooltip {
   position: relative;
   cursor: pointer;
@@ -443,20 +403,20 @@ body.inverted .scoreboard-portugal {
 .tooltip::after {
     content: attr(data-tooltip);
     position: absolute;
-    z-index: 9999; 
+    z-index: 9999;
     top: 50%;
     left: 100%;
     transform: translateY(-50%);
     background-color: #333;
     color: #fff;
-    padding: 3px 8px; 
-    border-radius: 3px; 
-    font-size: 12px; 
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
     white-space: nowrap;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s, transform 0.3s;
-    margin-left: 10px; 
+    margin-left: 10px;
 }
 
 .tooltip:hover::after {
@@ -481,7 +441,7 @@ body.inverted .scoreboard-portugal {
 }
 
 .legenda-container {
-    margin-left: 12px; 
+    margin-left: 12px;
 }
 
 .legenda-row {
@@ -500,26 +460,28 @@ body.inverted .scoreboard-portugal {
 }
 
 .icon-azul-escuro {
-    background-color: #002d5c; 
+    background-color: #002d5c;
 }
 
 .icon-azul-claro {
-    background-color: #007bff; 
+    background-color: #007bff;
 }
 
 .icon-vermelho {
-    background-color: #ff4d4d; 
+    background-color: #ff4d4d;
 }
 
 .icon-laranja {
-    background-color:rgb(184, 134, 11); 
+    background-color:rgb(184, 134, 11);
 }
 
 .icon-amarelo {
     background-color:  rgb(127, 0, 41);
+    background-color:  rgb(127, 0, 41);
 }
 
 .icon-vermelho-claro {
+    background-color: #ffcccc;
     background-color: #ffcccc;
 }
 
@@ -529,9 +491,6 @@ body.inverted .scoreboard-portugal {
   color: #000000;
   margin-left: 27px;
 }
-
-
-
 
 /*darkmode*/
 
@@ -624,7 +583,6 @@ body.darkmode a {
 
 body.darkmode a:hover {
   color: var(--accent-color);
-  text-decoration: underline;
 }
 
 body.darkmode .nota-explicativa {
