@@ -6,6 +6,8 @@
   background-color: #fff;
   color: #333;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 999999;
+  position: relative;
 }
 
 .logo img {

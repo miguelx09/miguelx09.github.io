@@ -59,6 +59,37 @@ p{
 }
 
 #scroll-to-top{
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--base-variant);
+  cursor: pointer;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#scroll-to-top svg{
+  stroke: var(--primary-color);
+  width: 30px;
+  height: 30px;
+}
+
+.darkmode #scroll-to-top svg:first-child{
+  display: none;
+}
+.darkmode #scroll-to-top svg:last-child{
+  display: block;
+}
+
+#scroll-to-top{
   background-color: var(--base-color);
   transform: scale(1);
 }
@@ -76,6 +107,10 @@ p{
 
 .darkmode nav a{
   color: var(--text-color) !important;
+}
+
+.darkmode nav a:hover{
+  color: var(--base-color) !important;
 }
 
 .darkmode .footer {
@@ -145,8 +180,4 @@ p{
 
 .darkmode .news-summary{
   color: var(--secondary-text);
-}
-
-.darkmode .nav a:hover{
-  color: var(--accent-color);
 }
