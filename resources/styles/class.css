@@ -19,7 +19,8 @@ body {
   padding: 20px;
   background-color: #ffffff;
   border-radius: 8px;
-  max-width: 800px;
+  width: 90%;
+  max-width: 1200px;
   margin: 20px auto;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -108,20 +109,10 @@ table {
 .scoreboard-portugal img:hover {
   transform: scale(1.2);
   transition: 0.3s;
-  cursor: pointer;
 }
-.tabela-colunas-bordas {
-  border-top: none !important;
-}
-
 .titulo-clube {
   width: 35%;
   text-align: left;
-}
-
-.titulo-clube:hover {
-  text-decoration: underline;
-  cursor: pointer;
 }
 .titulo-clube:not(:hover) {
   text-decoration: none;
@@ -372,17 +363,12 @@ table {
 }
 
 @media screen and (max-width: 768px) {
-    td:nth-child(12),
-    th:nth-child(10) {
+    th:nth-child(10), td:nth-child(11) {
         display: none;
         margin-right: 10px;
     }
-
     .form {
-        display: none;
-    }
-    .tabela-colunas-bordas {
-        display:none;
+      display: none;
     }
     .scoreboard-portugal td {
         font-size: small;
@@ -403,6 +389,11 @@ table {
     .remove {
         display: none;
     }
+    .legenda-row, 
+    .nota-explicativa {
+      margin-left: 9px !important;
+    }
+  
 }
 
 .tooltip {
@@ -459,6 +450,7 @@ table {
   align-items: center;
   margin-bottom: 5px;
   margin-left: 27px;
+  width: 100%;
 }
 
 .legenda-row .icon {
@@ -597,11 +589,27 @@ body.darkmode a:hover {
 body.darkmode .nota-explicativa {
   background-color: var(--base-variant);
   color: var(--text-color);
-  padding: 10px;
+  padding-top: 5px;
   border-radius: 5px;
 }
 
 body.darkmode .scoreboard-portugal th {
   background-color: var(--base-variant);
   color: var(--text-color);
+}
+
+#sort-number {
+  cursor: pointer;
+  text-decoration: underline;
+}
+th.asc {
+  content: ' \25b2';
+  text-decoration: none;
+}
+th.asc::after {
+  content: ' \25b2';
+}
+
+th.desc::after {
+  content: ' \25bc'; 
 }

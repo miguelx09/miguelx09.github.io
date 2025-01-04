@@ -52,6 +52,7 @@ nav a {
 nav a:hover {
   background-color: #f0f0f0;
   color: #000;
+  text-decoration: none !important;
 }
 
 @media (max-width: 768px) {
