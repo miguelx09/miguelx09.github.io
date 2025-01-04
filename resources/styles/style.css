@@ -13,6 +13,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 body {
@@ -21,7 +22,6 @@ body {
   background-color: var(--dark-bg);
   color: var(--dark-text);
   line-height: 1.6;
-  transition: background-color 0.3s, color 0.3s;
 }
 
 .content {
