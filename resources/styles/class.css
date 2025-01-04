@@ -537,3 +537,112 @@ body.inverted .scoreboard-portugal {
   color: #000000;
   margin-left: 27px;
 }
+
+
+
+
+/*darkmode*/
+
+:root {
+  --base-color: white;
+  --base-variant: #e8e9ed;
+  --text-color: #111528;
+  --secondary-text: #232738;
+  --primary-color: #3a435d;
+  --accent-color: #0071ff;
+}
+
+.darkmode {
+  --base-color: #070b1d;
+  --base-variant: #101425;
+  --text-color: #ffffff;
+  --secondary-text: #a4a5b8;
+  --primary-color: #3a435d;
+  --accent-color: #0071ff;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--base-color);
+  color: var(--text-color);
+}
+
+section {
+  background-color: var(--base-variant);
+}
+
+p {
+  color: var(--secondary-text);
+}
+
+#theme-switch {
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--base-variant);
+  cursor: pointer;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+body.darkmode .header-section {
+  background-color: var(--base-variant);
+}
+
+body.darkmode .liga-title,
+body.darkmode .liga-year {
+  color: var(--text-color);
+}
+
+body.darkmode .scoreboard-portugal {
+  background-color: var(--base-variant);
+  color: var(--text-color);
+}
+
+body.darkmode .scoreboard-portugal th,
+body.darkmode .scoreboard-portugal td {
+  border-color: #333;
+}
+
+body.darkmode .scoreboard-portugal .form-container {
+  background-color: #2c2c2c;
+}
+
+body.darkmode .scoreboard-portugal button {
+  background-color: #333;
+  color: var(--text-color);
+}
+
+body.darkmode .scoreboard-portugal button:hover {
+  background-color: #444;
+}
+
+body.darkmode footer {
+  background-color: var(--base-variant);
+  color: var(--text-color);
+}
+
+body.darkmode a {
+  color: var(--accent-color);
+}
+
+body.darkmode a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+body.darkmode .nota-explicativa {
+  background-color: var(--base-variant);
+  color: var(--text-color);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+body.darkmode .scoreboard-portugal th {
+  background-color: var(--base-variant);
+  color: var(--text-color);
+}
