@@ -66,7 +66,7 @@ p{
   background-color: var(--base-variant);
   cursor: pointer;
   border: none;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   position: fixed;
