@@ -37,12 +37,12 @@ main {
   flex-wrap: nowrap;
   justify-content: flex-start;
   gap: 20px;
-  padding: 10px;
+  padding: 20px;
   margin: 0 auto;
   max-width: 100%;
   overflow-x: auto;
   scroll-behavior: smooth;
-  background-color: #332b25bc;
+  background-color: #e0e0e0bc;
   border-radius: 10px;
   -webkit-overflow-scrolling: touch;
 }
@@ -55,8 +55,8 @@ main {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   flex-shrink: 0;
-  width: 100px;
-  height: 120px;
+  width: auto;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -64,7 +64,7 @@ main {
 }
 
 .club-item:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .club-logo {

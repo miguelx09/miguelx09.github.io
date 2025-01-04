@@ -14,17 +14,21 @@
   --primary-color: #3a435d;
   --accent-color: #0071ff;
 }
+
 body{
   min-height: 100vh;
   background-color: var(--base-color);
   color: var(--text-color);
 }
+
 section{
   background-color: var(--base-variant);
 }
+
 p{
   color: var(--secondary-text);
 }
+
 #theme-switch{
   height: 50px;
   width: 50px;
@@ -42,18 +46,23 @@ p{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
+
 #theme-switch:hover{
   transform: scale(1.1);
 }
+
 #theme-switch svg{
   fill: var(--primary-color);
 }
+
 #theme-switch svg:last-child{
   display: none;
 }
+
 .darkmode #theme-switch svg:first-child{
   display: none;
 }
+
 .darkmode #theme-switch svg:last-child{
   display: block;
 }
@@ -90,7 +99,7 @@ p{
 }
 
 #scroll-to-top{
-  background-color: var(--base-color);
+  background-color: var(--base-variant);
   transform: scale(1);
 }
 
@@ -145,6 +154,15 @@ p{
   color: var(--text-color);
 }
 
+.darkmode .club-item{
+  background: var(--base-variant);
+  border: 1px solid var(--primary-color);
+}
+
+.darkmode .club-item:hover{
+  background: var(--primary-color);
+}
+
 .darkmode .match{
   background: var(--base-variant);
   border: 1px solid var(--primary-color);
@@ -180,4 +198,53 @@ p{
 
 .darkmode .news-summary{
   color: var(--secondary-text);
+}
+
+h1, h2{
+  color: var(--text-color) !important;
+}
+
+.darkmode .header-section{
+  background-color: var(--base-variant);
+  color: var(--text-color);
+  box-shadow: 0px 4px 23px 8px rgba(125, 125, 125, 0.2) !important;
+}
+
+.darkmode .liga-year, .nota-explicativa{
+  color: var(--secondary-text);
+}
+
+.darkmode .scoreboard-portugal{
+  background-color: var(--base-variant);
+  color: var(--text-color);
+  box-shadow: 0px 4px 23px 8px rgba(125, 125, 125, 0.2) !important;
+}
+
+.darkmode main > .content{
+  background-color: inherit;
+  box-shadow: none !important;
+}
+
+.darkmode .header-section > .content{
+  box-shadow: none !important;
+}
+
+.darkmode .content article{
+  background-color: var(--base-variant);
+  color: var(--text-color);
+  box-shadow: 0px 4px 23px 8px rgba(125, 125, 125, 0.25) !important;
+}
+
+.darkmode .content:has(article){
+  background-color: var(--base-variant);
+  color: var(--text-color);
+  box-shadow: 0px 4px 23px 8px rgba(125, 125, 125, 0.25) !important;
+}
+
+.darkmode .content article p{
+  color: var(--secondary-text);
+}
+
+.darkmode .main-fader {
+  background-color: #232738 !important;
 }

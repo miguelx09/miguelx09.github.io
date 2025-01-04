@@ -321,47 +321,6 @@ table {
   cursor: pointer;
 }
 
-body.inverted {
-  background-color: #1e1e1e;
-}
-
-body.inverted .liga-title {
-  color: #ddd;
-}
-body.inverted .liga-title {
-  color: #ddd;
-}
-
-body.inverted .legenda table {
-  background-color: #2a2a2a;
-}
-body.inverted .legenda th {
-  color: #ddd;
-}
-body.inverted .legenda th {
-  color: #ddd;
-}
-
-body.inverted .header-section {
-  background-color: black;
-}
-
-body.inverted .liga-year {
-  color: white;
-}
-
-body.inverted .scoreboard-portugal tbody th {
-  color: #000000;
-}
-
-body.inverted .scoreboard-portugal tbody td {
-  color: #ffffff;
-}
-
-body.inverted .scoreboard-portugal {
-  background-color: #000000;
-}
-
 @media (max-width: 768px) {
   .scoreboard-portugal .form-container {
     padding: 10px;
@@ -445,10 +404,6 @@ body.inverted .scoreboard-portugal {
     }
 }
 
-
-
-
-/*tooltip test*/ 
 .tooltip {
   position: relative;
   cursor: pointer;
@@ -457,20 +412,20 @@ body.inverted .scoreboard-portugal {
 .tooltip::after {
     content: attr(data-tooltip);
     position: absolute;
-    z-index: 9999; /* Garante que estará acima de outros elementos */
+    z-index: 9999;
     top: 50%;
     left: 100%;
     transform: translateY(-50%);
     background-color: #333;
     color: #fff;
-    padding: 3px 8px; /* Ajusta o padding para deixar a tooltip menor */
-    border-radius: 3px; /* Ajusta o border-radius para deixar a tooltip menor */
-    font-size: 12px; /* Ajusta o tamanho da fonte para deixar a tooltip menor */
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
     white-space: nowrap;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s, transform 0.3s;
-    margin-left: 10px; /* Adiciona um espaço entre o tooltip e o elemento */
+    margin-left: 10px;
 }
 
 .tooltip:hover::after {
@@ -495,7 +450,7 @@ body.inverted .scoreboard-portugal {
 }
 
 .legenda-container {
-    margin-left: 12px; /* Alinhamento da legenda à altura dos números */
+    margin-left: 12px;
 }
 
 .legenda-row {
@@ -513,27 +468,27 @@ body.inverted .scoreboard-portugal {
 }
 
 .icon-azul-escuro {
-    background-color: #002d5c; /* Azul escuro */
+    background-color: #002d5c;
 }
 
 .icon-azul-claro {
-    background-color: #007bff; /* Azul claro */
+    background-color: #007bff;
 }
 
 .icon-vermelho {
-    background-color: #ff4d4d; /* Vermelho */
+    background-color: #ff4d4d;
 }
 
 .icon-laranja {
-    background-color:rgb(184, 134, 11); /* Laranja */
+    background-color:rgb(184, 134, 11);
 }
 
 .icon-amarelo {
-    background-color:  rgb(127, 0, 41); /* Amarelo */
+    background-color:  rgb(127, 0, 41);
 }
 
 .icon-vermelho-claro {
-    background-color: #ffcccc; /* Vermelho claro */
+    background-color: #ffcccc;
 }
 
 .nota-explicativa {
