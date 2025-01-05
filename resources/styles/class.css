@@ -395,7 +395,7 @@ table {
     }
     .scoreboard-portugal th, .scoreboard-portugal td {
       font-size: 0.8rem;
-      padding: 6px;
+      padding: 10px;
     }
   .forms span {
     padding:0;
@@ -583,19 +583,14 @@ body.darkmode .scoreboard-portugal th {
   background-color: var(--base-variant);
   color: var(--text-color);
 }
-
 #sort-number {
   cursor: pointer;
 }
-#sort-number:hover {
-  transform: scale(1.1);
-}
+
 #sort-number-players {
   cursor: pointer;
 }
-#sort-number-players:hover {
-  transform: scale(1.1);
-}
+
 th.asc {
   content: ' \25b2';
   text-decoration: none;
@@ -793,10 +788,9 @@ body.darkmode .scoreboard-portugal-players th {
 @media screen and (max-width: 768px) {
   .scoreboard-portugal-players td {
       font-size: small;
-      padding: 12px;
   }
   .scoreboard-portugal-players th, .scoreboard-portugal-players td {
     font-size: 0.8rem;
-    padding: 6px;
+    padding: 10px;
   }
 }

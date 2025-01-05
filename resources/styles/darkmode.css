@@ -123,6 +123,21 @@ p{
 .darkmode nav a:hover{
   color: var(--base-color) !important;
 }
+body.dark-mode .ham-menu span {
+  background-color: #ffffff;
+}
+
+body.dark-mode .off-screen-menu {
+  background-color: #333333;
+}
+
+body.dark-mode .off-screen-menu a {
+  color: #ffffff;
+}
+
+body.dark-mode .off-screen-menu a:hover {
+  color: #dddddd;
+}
 
 .darkmode .footer {
   background-color: var(--base-variant);
