@@ -247,6 +247,8 @@ body {
   flex-direction: column;
   align-items: center;
   color: var(--dark-bg);
+    cursor: pointer;
+
 }
 
 .club:hover {
