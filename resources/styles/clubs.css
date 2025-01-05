@@ -18,8 +18,8 @@ h1 {
 /* Contêiner de informações dos clubes */
 #club-info {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Cartões ajustáveis */
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Tamanho mínimo maior */
+  gap: 30px; /* Espaçamento entre os cartões */
   max-width: 1400px;
   margin: 20px auto;
   padding: 10px;
@@ -31,7 +31,7 @@ h1 {
   background-color: #161b22; /* Fundo do cartão */
   border: 1px solid #30363d; /* Borda */
   border-radius: 10px; /* Cantos arredondados */
-  padding: 20px;
+  padding: 25px; /* Espaçamento interno maior */
   width: 100%;
   max-width: 350px; /* Largura máxima consistente */
   text-align: center;
@@ -42,6 +42,7 @@ h1 {
   justify-content: space-between; /* Distribui os elementos verticalmente */
   transition: transform 0.2s, box-shadow 0.2s; /* Transições no hover */
   height: 100%; /* Altura consistente */
+  margin: 10px; /* Espaçamento adicional ao redor do cartão */
 }
 
 .club-card:hover {
@@ -97,10 +98,11 @@ h1 {
 /* Layout responsivo */
 @media (max-width: 768px) {
   #club-info {
-      grid-template-columns: 1fr; /* Cartões em uma única coluna */
+    grid-template-columns: 1fr; /* Cartões em uma única coluna */
+    gap: 20px; /* Espaçamento menor em telas pequenas */
   }
 
   .club-card {
-      margin: 0 auto;
+    margin: 0 auto; /* Centraliza os cartões */
   }
 }

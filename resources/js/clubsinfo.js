@@ -212,7 +212,7 @@ const clubs = {
     avs: {
         name: "Aves Futebol Clube",
         description: "Fundado em 1930, conhecido como os Avenses.",
-        logo: "/resources/images/clubs/svg-clubs/avs.png",
+        logo: "/resources/images/clubs/svg-clubs/avs.svg",
         points: 7,
         details: {
             stadium: "Estádio do Clube Desportivo das Aves",
@@ -221,20 +221,6 @@ const clubs = {
             biggestWin: "6-0 contra o Nacional (2018)",
             mostGoalsSeason: 47,
             topScorer: "Luís Manuel"
-        }
-    },
-    gilvicente: {
-        name: "Gil Vicente Futebol Clube",
-        description: "Fundado em 1924, conhecido como os Galos.",
-        logo: "/resources/images/clubs/svg-clubs/gilvicente.png",
-        points: 15,
-        details: {
-            stadium: "Estádio Cidade de Barcelos",
-            coach: "Daniel Sousa",
-            titles: ["Campeonato de Portugal"],
-            biggestWin: "8-0 contra o Portimonense (1985)",
-            mostGoalsSeason: 50,
-            topScorer: "Paulinho"
         }
     },
     santaclara: {
@@ -250,7 +236,22 @@ const clubs = {
             mostGoalsSeason: 53,
             topScorer: "Thiago Santana"
         }
+    },
+    vitoriaguimaraes: {
+        name: "Vitória Sport Clube (Guimarães)",
+        description: "Fundado em 1922, conhecido como os Conquistadores.",
+        logo: "/resources/images/clubs/svg-clubs/vitoria.png",
+        points: 18,
+        details: {
+            stadium: "Estádio D. Afonso Henriques",
+            coach: "Moreno Teixeira",
+            titles: ["Taça de Portugal"],
+            biggestWin: "9-0 contra o Famalicão (1947)",
+            mostGoalsSeason: 61,
+            topScorer: "Douglas Tanque"
+        }
     }
+
 
     };
 
@@ -280,8 +281,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
     } else {
-        // Se nenhum clube for selecionado, mostra todos
-        clubInfoContainer.innerHTML = `<h1>Todos os Clubes</h1>`;
+      //  clubInfoContainer.innerHTML = `<h1>Todos os Clubes</h1>`;
         clubInfoContainer.classList.add("club-grid");
         Object.values(clubs).forEach((club, index) => {
             const clubKey = Object.keys(clubs)[index];
