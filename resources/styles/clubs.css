@@ -26,9 +26,7 @@ h1 {
   justify-items: center; /* Centraliza os cartões horizontalmente */
 }
 
-/* Cartão dos clubes */
 .club-card {
-  background-color: #161b22; /* Fundo do cartão */
   border: 1px solid #30363d; /* Borda */
   border-radius: 10px; /* Cantos arredondados */
   padding: 25px; /* Espaçamento interno maior */
