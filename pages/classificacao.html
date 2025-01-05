@@ -66,11 +66,15 @@
           <p class="liga-year">2023/2024</p>
         </div>
       </div>
+      <div class="tabs">
+        <button class="tablink" data-tab="Classificacao" onclick="openTab(event, 'Classificacao')">Clubes</button>
+        <button class="tablink" data-tab="Jogadores" onclick="openTab(event, 'Jogadores')">Jogadores</button>
+    </div>
     </section>
     
 
 <div class="container">
-    
+    <div id="Classificacao" class="tabcontent">
         <table class="scoreboard-portugal">
            <thead>
             <tr>    
@@ -523,6 +527,193 @@
             </tr>
         </table>
     </div>
+</div>
+<div id="Jogadores" class="tabcontent" style="display:none;">
+    <!-- Conteúdo dos jogadores -->
+    <table class="scoreboard-portugal">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Nacionalidade</th>
+                <th>Nome</th>
+                <th>Clube</th>
+                <th>Golos</th>
+                <th>Assistências</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td><img src="../resources/images/flags/suecia.png" alt="Suecia"></td>
+                <td>Gyokeres V.</td>
+                <td>Sporting</td>
+                <td>21</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td><img src="../resources/images/flags/espanha.png" alt="Espanha"></td>
+                <td>Samu</td>
+                <td>FC Porto</td>
+                <td>13</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td><img src="../resources/images/flags/brasil.png" alt="Brasil"></td>
+                <td>Fernandes Silva C.</td>
+                <td>Rio Ave</td>
+                <td>9</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td><img src="../resources/images/flags/brasil.png" alt="Brasil"></td>
+                <td>Galeno</td>
+                <td>FC Porto</td>
+                <td>8</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td><img src="../resources/images/flags/portugal.png" alt="Portugal"></td>
+                <td>Bruma</td>
+                <td>Braga</td>
+                <td>7</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td><img src="../resources/images/flags/portugal.png" alt="Portugal"></td>
+                <td>Trincão</td>
+                <td>Sporting</td>
+                <td>6</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td><img src="../resources/images/flags/turquia.png" alt="Turquia"></td>
+                <td>Akturkoglu K.</td>
+                <td>Benfica</td>
+                <td>6</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>8.</td>
+                <td><img src="../resources/images/flags/argentina.png" alt="Argentina"></td>
+                <td>Di Maria A.</td>
+                <td>Benfica</td>
+                <td>6</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>9.</td>
+                <td><img src="../resources/images/flags/brasil.png" alt="Brasil"></td>
+                <td>Vinicius Lopes</td>
+                <td>Santa Clara</td>
+                <td>6</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>10.</td>
+                <td><img src="../resources/images/flags/venezuela.png" alt="Venezuela"></td>
+                <td>Marques A.</td>
+                <td>Estoril</td>
+                <td>6</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>11.</td>
+                <td><img src="../resources/images/flags/japao.png" alt="Japão"></td>
+                <td>Fujimoto K.</td>
+                <td>Gil Vicente</td>
+                <td>5</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>11.</td>
+                <td><img src="../resources/images/flags/espanha.png" alt="Espanha"></td>
+                <td>Gonzalez N.</td>
+                <td>FC Porto</td>
+                <td>5</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>13.</td>
+                <td><img src="../resources/images/flags/portugal.png" alt="Portugal"></td>
+                <td>Horta R.</td>
+                <td>Braga</td>
+                <td>5</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>14.</td>
+                <td><img src="../resources/images/flags/suica.png" alt="Suiça"></td>
+                <td>Amdouni Z.</td>
+                <td>Benfica</td>
+                <td>5</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>14.</td>
+                <td><img src="../resources/images/flags/guinea.png" alt="Guinea"></td>
+                <td>Asue L.</td>
+                <td>Moreirense</td>
+                <td>5</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>14.</td>
+                <td><img src="../resources/images/flags/marrocos.png" alt="Marrocos"></td>
+                <td>El Ouazzani A.</td>
+                <td>Braga</td>
+                <td>5</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>17.</td>
+                <td><img src="../resources/images/flags/brasil.png" alt="Brasil"></td>
+                <td>Cassiano</td>
+                <td>Casa Pia AC</td>
+                <td>5</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>18.</td>
+                <td><img src="../resources/images/flags/portugal.png" alt="Portugal"></td>
+                <td>Gonçalves P.</td>
+                <td>Sporting</td>
+                <td>4</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>19.</td>
+                <td><img src="../resources/images/flags/grecia.png" alt="Grecia"></td>
+                <td>Pavlidis V.</td>
+                <td>Benfica</td>
+                <td>4</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>20.</td>
+                <td><img src="../resources/images/flags/espanha.png" alt="Espanha"></td>
+                <td>Aranda O.</td>
+                <td>Famalicão</td>
+                <td>4</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>20.</td>
+                <td><img src="../resources/images/flags/portugal.png" alt="Portugal"></td>
+                <td>Gil Dias</td>
+                <td>Famalicão</td>
+                <td>4</td>
+                <td>1</td>
+            </tr>
+            <!-- Adicione mais jogadores conforme necessário -->
+        </tbody>
+    </table>
+</div>
    
 
     <footer class="footer">
@@ -557,6 +748,43 @@
     <script src="/resources/js/darkmode.js"></script> 
     <script src="/resources/js/loader.js"></script>
     <script src="/resources/js/table.js"></script>
-        
+  <script>
+    // Função para alternar entre as abas
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+
+        // Ocultar todas as abas
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Remover a classe "active" de todos os botões
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Mostrar o conteúdo da aba desejada
+        document.getElementById(tabName).style.display = "block";
+
+        // Adicionar a classe "active" ao botão da aba clicada ou inicializada
+        if (evt) {
+            evt.currentTarget.className += " active";
+        } else {
+            // Quando a página é carregada, adiciona a classe active ao botão da aba inicial
+            const tabButton = document.querySelector(`.tablink[data-tab="${tabName}"]`);
+            if (tabButton) {
+                tabButton.className += " active";
+            }
+        }
+    }
+
+    // Inicializa a aba "Classificacao" ao carregar a página
+    document.addEventListener("DOMContentLoaded", function() {
+        openTab(null, "Classificacao"); // Define a aba "Classificacao" como ativa
+    });
+</script>
+
 </body>
 </html>
