@@ -13,7 +13,7 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
-/* CSS HEADER */
+
 .header-section {
   display: block;
   align-items: center;
@@ -55,7 +55,7 @@ body {
 }
 
 
-/* CSS TABLE CLUBS*/
+
 table {
   width: 100vw;
   text-align: center;
@@ -520,7 +520,7 @@ th.asc::after {
 th.desc::after {
   content: ' \25bc'; 
 }
-/* Light mode styles */
+
 .tabs {
   overflow: hidden;
   margin-top: 20px;
@@ -568,7 +568,7 @@ th.desc::after {
   }
 }
 
-/* CSS Table Players */
+
 .scoreboard-portugal-players {
   z-index: 1;
   border-top: none;
@@ -615,7 +615,6 @@ th.desc::after {
   text-align: center; 
 }
 
-/*Responsive*/
 @media (max-width: 768px) {
   .scoreboard-portugal-players th, .scoreboard-portugal-players td {
       font-size: 0.8rem;
