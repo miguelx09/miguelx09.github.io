@@ -3,7 +3,7 @@ const clubs = {
     sporting: {
         name: "Sporting Clube de Portugal",
         description: "Fundado em 1906, é um dos maiores clubes de Portugal, conhecido como os Leões.",
-        logo: "/resources/images/clubs/svg-clubs/sporting.svg",
+        logo: "/resources/images/clubs/svg-clubs/sporting.png",
         points: 33,
         details: {
             stadium: "Estádio José Alvalade",
@@ -184,7 +184,7 @@ const clubs = {
     nacional: {
         name: "Clube Desportivo Nacional",
         description: "Fundado em 1910, conhecido como os Alvinegros.",
-        logo: "/resources/images/clubs/svg-clubs/vitoria.png",
+        logo: "/resources/images/clubs/svg-clubs/nacional.png",
         points: 8,
         details: {
             stadium: "Estádio da Madeira",
@@ -198,7 +198,7 @@ const clubs = {
     farense: {
         name: "Sporting Clube Farense",
         description: "Fundado em 1910, conhecido como os Leões de Faro.",
-        logo: "/resources/images/clubs/svg-clubs/vitoria.png",
+        logo: "/resources/images/clubs/svg-clubs/farense.png",
         points: 9,
         details: {
             stadium: "Estádio de São Luís",
