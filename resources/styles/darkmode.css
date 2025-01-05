@@ -46,6 +46,7 @@ p{
   left: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
 }
 
 #theme-switch:hover{
