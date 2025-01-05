@@ -1,63 +1,104 @@
-* {
+/* Estilo geral do corpo */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0d1117; /* Fundo escuro */
+  color: #c9d1d9; /* Texto claro */
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  transition: background-color 0.3s, color 0.3s;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-  background-color: #6e8784;
-  padding: 20px;
+/* Cabeçalho */
+h1 {
+  text-align: center;
+  color: #58a6ff;
+  margin: 20px 0;
+  font-size: 28px;
 }
 
-.club-card {
-  display: flex;
-  align-items: center;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  padding: 20px;
+/* Contêiner de informações dos clubes */
+#club-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Cartões ajustáveis */
   gap: 20px;
+  max-width: 1400px;
+  margin: 20px auto;
+  padding: 10px;
+  justify-items: center; /* Centraliza os cartões horizontalmente */
 }
 
-.club-logo {
-  width: 100px;
-  height: auto;
-  border-radius: 8px;
-}
-
-.club-info {
+/* Cartão dos clubes */
+.club-card {
+  background-color: #161b22; /* Fundo do cartão */
+  border: 1px solid #30363d; /* Borda */
+  border-radius: 10px; /* Cantos arredondados */
+  padding: 20px;
+  width: 100%;
+  max-width: 350px; /* Largura máxima consistente */
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra */
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  flex: 1;
+  align-items: center; /* Alinha tudo ao centro */
+  justify-content: space-between; /* Distribui os elementos verticalmente */
+  transition: transform 0.2s, box-shadow 0.2s; /* Transições no hover */
+  height: 100%; /* Altura consistente */
 }
 
-.club-info h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #333;
+.club-card:hover {
+  transform: scale(1.05); /* Efeito de zoom no hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
 }
 
-.club-info p {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 8px;
+/* Logo do clube */
+.club-card img.club-logo {
+  max-width: 100px; /* Tamanho fixo e consistente */
+  height: auto;
+  margin-bottom: 15px;
+  display: block;
 }
 
-.club-info strong {
-  color: #333;
+/* Título do clube */
+.club-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #58a6ff; /* Azul */
 }
 
-.club-info a {
-  font-size: 1rem;
-  color: #4a90e2;
+/* Descrição e informações */
+.club-card p {
+  font-size: 14px;
+  margin: 5px 0;
+  line-height: 1.4;
+  color: #c9d1d9; /* Texto claro */
+}
+
+.club-card p strong {
+  color: #f0f6fc; /* Destaque */
+}
+
+/* Botão de detalhes */
+.club-card a.view-button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  font-size: 14px;
+  background-color: #238636; /* Verde */
+  color: #ffffff;
   text-decoration: none;
-  margin-top: 10px;
+  border-radius: 5px;
+  transition: background-color 0.2s;
 }
 
-.club-info a:hover {
-  text-decoration: underline;
+.club-card a.view-button:hover {
+  background-color: #2ea043; /* Verde mais claro no hover */
+}
+
+/* Layout responsivo */
+@media (max-width: 768px) {
+  #club-info {
+      grid-template-columns: 1fr; /* Cartões em uma única coluna */
+  }
+
+  .club-card {
+      margin: 0 auto;
+  }
 }

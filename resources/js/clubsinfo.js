@@ -45,47 +45,32 @@ document.addEventListener('DOMContentLoaded', () => {
     if (clubName && clubs[clubName]) {
         const club = clubs[clubName];
 
-        // Verifica se o logo é um SVG (presença de <svg>) ou um caminho para imagem
-        let logoContent;
-        if (club.logo.startsWith('<svg')) {
-            logoContent = club.logo;  // Código SVG diretamente
-        } else {
-            logoContent = `<img src="${club.logo}" alt="${club.name}" class="club-logo">`; // Caso seja uma imagem
-        }
-
         clubInfoContainer.innerHTML = `
-            <div class="club-card">
-                <h1>${club.name}</h1>
-                ${logoContent} <!-- Exibe o logo do clube -->
+            <div class="club-detail-container">
+                <img src="${club.logo}" alt="${club.name}" class="club-logo">
+                <h1>${club.name}</h1>        
                 <p>${club.description}</p>
                 <p><strong>Pontos:</strong> ${club.points}</p>
                 <p><strong>Estádio:</strong> ${club.details.stadium}</p>
                 <p><strong>Treinador:</strong> ${club.details.coach}</p>
                 <p><strong>Títulos:</strong> ${club.details.titles.join(", ")}</p>
-                <a href="clubs.html" class="back-button">Voltar para todos os clubes</a>
+                <a href="clubs.html" class="back-button">⬅️ Voltar para todos os clubes</a>
             </div>
         `;
     } else {
         // Se nenhum clube for selecionado, mostra todos
         clubInfoContainer.innerHTML = `<h1>Todos os Clubes</h1>`;
+        clubInfoContainer.classList.add("club-grid");
         Object.values(clubs).forEach((club, index) => {
             const clubKey = Object.keys(clubs)[index];
 
-            // Verifica se o logo é um SVG ou uma imagem
-            let logoContent;
-            if (club.logo.startsWith('<svg')) {
-                logoContent = club.logo;  // Exibe o código SVG diretamente
-            } else {
-                logoContent = `<img src="${club.logo}" alt="${club.name}" class="club-logo">`; // Caso seja uma imagem
-            }
-
             clubInfoContainer.innerHTML += `
                 <div class="club-card">
+                    <img src="${club.logo}" alt="${club.name}" class="club-logo">
                     <h3>${club.name}</h3>
-                    ${logoContent} <!-- Exibe o logo do clube -->
                     <p>${club.description}</p>
                     <p><strong>Pontos:</strong> ${club.points}</p>
-                    <a href="clubs.html?club=${clubKey}" class="view-button">Ver Detalhes</a>
+                    <a href="clubs.html?club=${clubKey}" class="view-button">Ver Detalhes ➡️</a>
                 </div>
             `;
         });
