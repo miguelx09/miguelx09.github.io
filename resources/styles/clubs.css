@@ -8,188 +8,56 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #6e8784;
+  padding: 20px;
 }
 
-html,
-body {
-  height: 100%;
-  margin: 0;
+.club-card {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  gap: 20px;
+}
+
+.club-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+.club-info {
   display: flex;
   flex-direction: column;
-}
-
-main {
+  justify-content: center;
   flex: 1;
 }
 
-.content {
-  padding: 20px;
-  justify-items: center;
+.club-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
 }
 
-.news-title {
+.club-info p {
   font-size: 1rem;
-  font-weight: bold;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.club-info strong {
   color: #333;
 }
 
-.liga-container {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  gap: 20px;
-  padding: 20px;
-  margin: 0 auto;
-  max-width: 100%;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  background-color: #e0e0e0bc;
-  border-radius: 10px;
-  -webkit-overflow-scrolling: touch;
-}
-
-.club-item {
-  text-align: center;
-  background-color: #f9f9f9;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  flex-shrink: 0;
-  width: auto;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.club-item:hover {
-  transform: scale(1.05);
-}
-
-.club-logo {
-  width: 60%;
-  height: auto;
-  object-fit: contain;
-  margin-bottom: 10px;
-  cursor: pointer;
-}
-
-.club-logo {
-  width: 100%;
-  max-width: 40px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  cursor: pointer;
-}
-
-.popup {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 1000;
-  justify-content: center;
-  align-items: center;
-}
-
-.popup:target {
-  display: flex;
-}
-
-.popup-content {
-  background: #ffffff;
-  color: #333;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  width: 80%;
-  text-align: center;
-}
-
-.popup-content img {
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-  margin-bottom: 10px;
-}
-
-.close-button {
-  display: inline-block;
-  margin-top: 10px;
+.club-info a {
+  font-size: 1rem;
+  color: #4a90e2;
   text-decoration: none;
-  font-size: 16px;
-  color: #fff;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 4px;
-  background-color: #f44336;
-  cursor: pointer;
+  margin-top: 10px;
 }
 
-.close-button:hover {
-  background-color: #d32f2f;
-}
-
-@media (max-width: 768px) {
-  .liga-container {
-    gap: 10px;
-  }
-
-  .club-item {
-    width: 80px;
-    height: 100px;
-  }
-
-  .club-logo {
-    max-width: 35px;
-  }
-
-  .news-title {
-    font-size: 0.9rem;
-  }
-
-  .popup-content {
-    width: 90%;
-  }
-}
-
-@media (max-width: 480px) {
-  .content {
-    padding: 10px;
-  }
-
-  .news-title {
-    font-size: 0.8rem;
-  }
-
-  .liga-container {
-    gap: 10px;
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .club-item {
-    width: 70px;
-    height: 90px;
-  }
-
-  .club-logo {
-    max-width: 30px;
-  }
-
-  .popup-content {
-    width: 90%;
-    padding: 15px;
-  }
-
-  .close-button {
-    padding: 8px 12px;
-    font-size: 14px;
-  }
+.club-info a:hover {
+  text-decoration: underline;
 }
