@@ -13,6 +13,8 @@
   --secondary-text: #a4a5b8;
   --primary-color: #3a435d;
   --accent-color: #0071ff;
+  --span-color: #ffffff;
+  --offscreen-menu-color: #333333;
 }
 
 body{
@@ -123,19 +125,16 @@ p{
 .darkmode nav a:hover{
   color: var(--base-color) !important;
 }
-body.dark-mode .ham-menu span {
-  background-color: #ffffff;
-}
 
-body.dark-mode .off-screen-menu {
+.dark-mode .off-screen-menu {
   background-color: #333333;
 }
 
-body.dark-mode .off-screen-menu a {
+.dark-mode .off-screen-menu a {
   color: #ffffff;
 }
 
-body.dark-mode .off-screen-menu a:hover {
+.dark-mode .off-screen-menu a:hover {
   color: #dddddd;
 }
 
@@ -237,6 +236,48 @@ h1, h2{
   box-shadow: 0px 4px 23px 8px rgba(125, 125, 125, 0.05) !important;
 }
 
+.darkmode .scoreboard-portugal th {
+  background-color: var(--base-variant);
+  color: var(--text-color);
+}
+
+.darkmode .scoreboard-portugal-players {
+  background-color: var(--base-variant);
+  color: var(--text-color);
+  box-shadow: 0px 4px 23px 8px rgba(125, 125, 125, 0.05) !important;
+}
+
+.darkmode .scoreboard-portugal-players th,
+.darkmode .scoreboard-portugal-players td {
+  border-color: #333;
+}
+
+.darkmode .scoreboard-portugal-players .form-container {
+  background-color: #2c2c2c;
+}
+
+.darkmode .scoreboard-portugal-players button {
+  background-color: #333;
+  color: var(--text-color);
+}
+
+.darkmode .scoreboard-portugal-players button:hover {
+  background-color: #444;
+}
+.darkmode .scoreboard-portugal-players th {
+  background-color: var(--base-variant);
+  color: var(--text-color);
+}
+
+.darkmode .tablink {
+  color: var(--text-color);
+}
+.darkmode .ham-menu span {
+  background-color: var(--span-color);
+}
+.darkmode .off-screen-menu {
+  background-color: var(--primary-color);
+}
 .darkmode main > .content{
   background-color: inherit;
   box-shadow: none !important;
