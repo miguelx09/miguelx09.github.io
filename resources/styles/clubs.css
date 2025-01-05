@@ -24,8 +24,8 @@ h1 {
 
 #club-info {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Tamanho mínimo maior */
+  gap: 30px; /* Espaçamento entre os cartões */
   max-width: 1400px;
   margin: 20px auto;
   padding: 10px;
@@ -33,20 +33,21 @@ h1 {
 }
 
 .club-card {
-  background-color: #161b22;
-  border: 1px solid #30363d;
-  border-radius: 10px;
-  padding: 20px;
+  background-color: #161b22; /* Fundo do cartão */
+  border: 1px solid #30363d; /* Borda */
+  border-radius: 10px; /* Cantos arredondados */
+  padding: 25px; /* Espaçamento interno maior */
   width: 100%;
   max-width: 350px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  transition: transform 0.2s, box-shadow 0.2s;
-  height: 100%;
+  align-items: center; /* Alinha tudo ao centro */
+  justify-content: space-between; /* Distribui os elementos verticalmente */
+  transition: transform 0.2s, box-shadow 0.2s; /* Transições no hover */
+  height: 100%; /* Altura consistente */
+  margin: 10px; /* Espaçamento adicional ao redor do cartão */
 }
 
 .club-card:hover {
@@ -54,13 +55,17 @@ h1 {
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
 }
 
-.club-card img.club-logo {
-  max-width: 100px;
-  height: auto;
-  margin-bottom: 15px;
-  display: block;
+.club-logo {
+  width: 100px;            /* Largura fixa */
+  height: 132px;           /* Altura fixa */
+  object-fit: contain;     /* Mantém o logo completo visível */
+  object-position: center; /* Centraliza o conteúdo */
+  margin: 0 auto 15px;     /* Centraliza horizontalmente e adiciona espaçamento */
+  display: block;          /* Garante alinhamento */
+  border-radius: 5px;      /* Opcional: cantos arredondados */
 }
 
+/* Título do clube */
 .club-card h3 {
   font-size: 18px;
   margin: 10px 0;
@@ -105,12 +110,37 @@ a.back-button {
 }
 @media (max-width: 768px) {
   #club-info {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 20px; /* Espaçamento menor em telas pequenas */
   }
 
   .club-card {
-      margin: 0 auto;
+    margin: 0 auto;
   }
+}
+
+@media (min-width: 960px) {
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+.club-logo {
+  width: 10rem;
+  max-width: 8rem;
+  min-width: 8rem;
+}
+
+.club-detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: red;
+  border-radius: 1rem;
+  padding: 2rem;
 }
 
 @media (min-width: 960px) {
