@@ -49,12 +49,14 @@ h1 {
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
 }
 
-/* Logo do clube */
-.club-card img.club-logo {
-  max-width: 100px; /* Tamanho fixo e consistente */
-  height: auto;
-  margin-bottom: 15px;
-  display: block;
+.club-logo {
+  width: 100px;            /* Largura fixa */
+  height: 132px;           /* Altura fixa */
+  object-fit: contain;     /* Mantém o logo completo visível */
+  object-position: center; /* Centraliza o conteúdo */
+  margin: 0 auto 15px;     /* Centraliza horizontalmente e adiciona espaçamento */
+  display: block;          /* Garante alinhamento */
+  border-radius: 5px;      /* Opcional: cantos arredondados */
 }
 
 /* Título do clube */
