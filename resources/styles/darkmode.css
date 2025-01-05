@@ -268,7 +268,6 @@ h1, h2{
   background-color: var(--base-variant);
   color: var(--text-color);
 }
-
 .darkmode .tablink {
   color: var(--text-color);
 }
@@ -276,7 +275,7 @@ h1, h2{
   background-color: var(--span-color);
 }
 .darkmode .off-screen-menu {
-  background-color: var(--primary-color);
+  background-color: rgba(0, 0, 0);
 }
 .darkmode main > .content{
   background-color: inherit;

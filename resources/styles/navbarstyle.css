@@ -81,7 +81,6 @@ nav a:hover {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 .off-screen-menu {
-  background-color: #fff;
   height: 100vh;
   width: 100%;
   max-width: 450px;
@@ -94,6 +93,7 @@ nav a:hover {
   justify-content: center;
   transition: right 0.3s ease;
   z-index: 9999;
+  background-color: rgba(224, 224, 224);
 }
 .off-screen-menu.active {
   right: 0;
