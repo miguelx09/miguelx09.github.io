@@ -23,8 +23,8 @@ body {
 }
 
 .club-logo {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: auto;
   border-radius: 8px;
 }
 
