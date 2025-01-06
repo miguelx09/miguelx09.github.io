@@ -154,11 +154,31 @@ nav a:hover {
 
 .footer a:hover {
   color: #000;
-  text-decoration: underline;
 }
 
 .footer p {
   margin-bottom: 10px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+
+.footer a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.3s ease;
+}
+
+.footer a:hover::after {
+  width: 100%;
 }
 
 @media (max-width: 768px) {
