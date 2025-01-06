@@ -305,3 +305,20 @@ h1, h2{
 .darkmode .main-fader {
   background-color: #232738 !important;
 }
+
+body.darkmode .club-card {
+  background-color: var(--base-variant);
+  border: 1px solid var(--primary-color);
+  box-shadow: 0px 4px 23px 8px rgba(125, 125, 125, 0.05) !important;
+  
+}
+
+body.darkmode .club-detail-container {
+  background-color: var(--base-variant);
+  border: 1px solid var(--primary-color);
+  box-shadow: 0px 4px 23px 8px rgba(125, 125, 125, 0.05) !important;
+}
+
+body.darkmode a.view-button svg{
+  fill: #ffffff;
+}

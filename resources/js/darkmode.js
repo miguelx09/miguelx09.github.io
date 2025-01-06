@@ -14,7 +14,6 @@ if(darkmode === "active") enableDarkmode()
 
 document.addEventListener("DOMContentLoaded", () => {
   const themeSwitch = document.getElementById('theme-switch')
-  console.log('Theme switch button:', themeSwitch)
 
   if (themeSwitch) {
     themeSwitch.addEventListener("click", () => {
