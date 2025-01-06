@@ -31,7 +31,7 @@ const clubs = {
         name: "Sport Lisboa e Benfica",
         description: "Fundado em 1904, conhecido como as Águias, é o clube com mais títulos nacionais.",
         logo: "/resources/images/clubs/svg-clubs/benfica1.svg",
-        points: 35,
+        points: 25,
         details: {
             stadium: "Estádio da Luz",
             coach: "Roger Schmidt",
