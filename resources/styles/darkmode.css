@@ -343,3 +343,16 @@ body.darkmode a.view-button svg{
 .darkmode .footer a:hover::after {
   width: 100%;
 }
+
+.darkmode #open-sidebar-button svg {
+  fill: #ffffff !important;
+}
+
+.darkmode #close-sidebar-button svg {
+  fill: #ffffff !important;
+}
+
+.darkmode #navbar {
+  box-shadow: none;
+  background: var(--base-variant);
+}
