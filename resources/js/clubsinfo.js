@@ -31,7 +31,7 @@ const clubs = {
         name: "Sport Lisboa e Benfica",
         description: "Fundado em 1904, conhecido como as Águias, é o clube com mais títulos nacionais.",
         logo: "/resources/images/clubs/svg-clubs/benfica1.svg",
-        points: 35,
+        points: 25,
         details: {
             stadium: "Estádio da Luz",
             coach: "Roger Schmidt",
@@ -274,8 +274,13 @@ const clubs = {
               <p><strong>Maior Vitória:</strong> ${club.details.biggestWin}</p>
               <p><strong>Golos Máximos numa Temporada:</strong> ${club.details.mostGoalsSeason}</p>
               <p><strong>Melhor Marcador:</strong> ${club.details.topScorer}</p>
-              <a href="clubs.html" class="back-button flex-align"><svg xmlns="http://www.w3.org/2000/svg" style="fill: #ffffff;" width="24" height="24"><path d="m12.718 4.707-1.413-1.415L2.585 12l8.72 8.707 1.413-1.415L6.417 13H20v-2H6.416l6.302-6.293z"/></svg> Voltar para todos os clubes</a>
-            </div>
+                <a href="javascript:history.back()" class="back-button flex-align">
+                <svg xmlns="http://www.w3.org/2000/svg" style="fill: #ffffff;" width="24" height="24">
+                    <path d="m12.718 4.707-1.413-1.415L2.585 12l8.72 8.707 1.413-1.415L6.417 13H20v-2H6.416l6.302-6.293z"/>
+                </svg>
+                Voltar para a página anterior
+                </a>            
+        </div>
           `;
         } else {
           clubInfoTitle.outerHTML += `<h1>Lista de Clubes</h1>`;
