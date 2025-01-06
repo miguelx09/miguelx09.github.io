@@ -11,12 +11,6 @@ body {
   color: #333;
 }
 
-html,
-body {
-  height: 100%;
-  overflow: hidden;
-}
-
 .content {
   line-height: 1.6;
   padding: 20px;
