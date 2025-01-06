@@ -24,8 +24,8 @@ h1 {
 
 #club-info {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Tamanho mínimo maior */
-  gap: 30px; /* Espaçamento entre os cartões */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
   max-width: 1400px;
   margin: 20px auto;
   padding: 10px;
@@ -33,20 +33,20 @@ h1 {
 }
 
 .club-card {
-  border: 1px solid #30363d; /* Borda */
-  border-radius: 10px; /* Cantos arredondados */
-  padding: 25px; /* Espaçamento interno maior */
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  padding: 25px;
   width: 100%;
   max-width: 350px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
-  align-items: center; /* Alinha tudo ao centro */
-  justify-content: space-between; /* Distribui os elementos verticalmente */
-  transition: transform 0.2s, box-shadow 0.2s; /* Transições no hover */
-  height: 100%; /* Altura consistente */
-  margin: 10px; /* Espaçamento adicional ao redor do cartão */
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.2s, box-shadow 0.2s;
+  height: 100%;
+  margin: 10px;
 }
 
 .club-card:hover {
@@ -55,16 +55,15 @@ h1 {
 }
 
 .club-logo {
-  width: 100px;            /* Largura fixa */
-  height: 132px;           /* Altura fixa */
-  object-fit: contain;     /* Mantém o logo completo visível */
-  object-position: center; /* Centraliza o conteúdo */
-  margin: 0 auto 15px;     /* Centraliza horizontalmente e adiciona espaçamento */
-  display: block;          /* Garante alinhamento */
-  border-radius: 5px;      /* Opcional: cantos arredondados */
+  width: 100px;
+  height: 132px;
+  object-fit: contain;
+  object-position: center;
+  margin: 0 auto 15px;
+  display: block;
+  border-radius: 5px;
 }
 
-/* Título do clube */
 .club-card h3 {
   font-size: 18px;
   margin: 10px 0;
@@ -107,10 +106,11 @@ a.back-button {
 .club-card a.view-button:hover {
   background-color: #2ea043;
 }
+
 @media (max-width: 768px) {
   #club-info {
     grid-template-columns: 1fr;
-    gap: 20px; /* Espaçamento menor em telas pequenas */
+    gap: 20px;
   }
 
   .club-card {
