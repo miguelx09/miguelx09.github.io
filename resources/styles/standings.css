@@ -23,7 +23,7 @@ body {
   width: 90%;
   max-width: 1200px;
   margin: 20px auto;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
 }
 
 .content {
@@ -76,7 +76,7 @@ table {
   background-color: #ffffff;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
 }
 #scoreboard-portugal-header {
   padding: 15px;
@@ -549,7 +549,7 @@ th.desc::after {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: red;
+  background-color: #0071ff;
   animation: slide-in 0.3s forwards;
 }
 
@@ -581,7 +581,7 @@ th.desc::after {
   background-color: #ffffff;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
 }
 #scoreboard-portugal-header {
   padding: 15px;
