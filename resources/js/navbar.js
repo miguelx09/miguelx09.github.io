@@ -46,7 +46,15 @@ function closeSidebar(){
 
 updateNavbar(media)
 
+  //icone separador 
 
-
-
+    document.addEventListener("DOMContentLoaded", () => {
+      let favicon = document.querySelector("link[rel='icon']");
+      if (!favicon) {
+          favicon = document.createElement("link");
+          favicon.rel = "icon";
+          document.head.appendChild(favicon);
+      }
+      favicon.href = "resources/images/others/icone.png";
+    });
 
