@@ -21,7 +21,7 @@ body {
 .main-news,
 .news-item {
   background-color: var(--secondary-color);
-  box-shadow: var(--box-shadow);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   padding: var(--spacing-base);
 }
@@ -148,8 +148,7 @@ body {
   gap: 15px;
   flex-wrap: nowrap;
   overflow-x: auto;
-  padding: 10px 0;
-  scrollbar-width: none;
+  padding: 15px 0;
   -ms-overflow-style: none;
   margin-left: 10px;
   margin-right: 10px;
