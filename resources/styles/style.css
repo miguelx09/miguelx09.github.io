@@ -1,21 +1,3 @@
-:root {
-  --primary-color: #ff9800;
-  --secondary-color: #ffffff;
-  --accent-color: #ffd700;
-  --dark-bg: #2c003e;
-  --dark-text: #f4f4f4;
-  --font-size-base: 1rem;
-  --spacing-base: 12px;
-  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  transition: background-color 0.3s, color 0.3s;
-}
-
 body {
   font-family: "Poppins", sans-serif;
   font-size: var(--font-size-base);
@@ -56,6 +38,7 @@ body {
   background-color: #f4f4f4;
   padding: 10px;
   border-radius: 8px;
+  margin: 5px;
 }
 
 .main-news .news-image {
