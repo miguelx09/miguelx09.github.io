@@ -146,12 +146,13 @@ body {
 .match-list {
   display: flex;
   gap: 15px;
-  justify-content: center;
   flex-wrap: nowrap;
   overflow-x: auto;
   padding: 10px 0;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .match-list::-webkit-scrollbar {
@@ -221,7 +222,7 @@ body {
   min-width: 80px;
   max-width: 10vw;
   margin-bottom: 15px;
-  background-color: var(--secondary-color);
+  background-color: var(--base-color);
   padding: 10px;
   border-radius: 8px;
   box-shadow: var(--box-shadow);
@@ -252,7 +253,6 @@ body {
   font-weight: 600;
   color: #333;
   line-height: 1.4;
-  background-color: #e1e1e1;
   padding: 3px;
   border-radius: 6px;
 }
