@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #ffffff;
@@ -548,7 +556,6 @@ th.desc::after {
 
 .tabcontent {
   display: none;
-  padding: 20px;
   border-top: none;
 }
 
