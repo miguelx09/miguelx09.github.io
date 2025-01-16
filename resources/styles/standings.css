@@ -360,10 +360,6 @@ table {
     .form {
       display: none;
     }
-    .scoreboard-portugal td {
-        font-size: small;
-        padding: 12px;
-    }
    .borda-azul {
     display:none;
    }
@@ -385,7 +381,7 @@ table {
     }
     .scoreboard-portugal th, .scoreboard-portugal td {
       font-size: 0.8rem;
-      padding: 10px;
+      padding: 6px;
     }
   .forms span {
     padding:0;
@@ -631,5 +627,6 @@ th.desc::after {
   .scoreboard-portugal-players th, .scoreboard-portugal-players td {
     font-size: 0.8rem;
     padding: 6px;
+    padding-bottom: 14px;
   }
 }
