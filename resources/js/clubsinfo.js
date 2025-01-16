@@ -236,7 +236,7 @@ const clubs = {
             topScorer: "Thiago Santana"
         }
     },
-    vitoriaguimaraes: {
+    vitoria: {
         name: "Vitória Sport Clube (Guimarães)",
         description: "Fundado em 1922, conhecido como os Conquistadores.",
         logo: "/resources/images/clubs/svg-clubs/vitoria.png",
