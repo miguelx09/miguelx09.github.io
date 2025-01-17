@@ -152,6 +152,16 @@ body {
   -ms-overflow-style: none;
   margin-left: 10px;
   margin-right: 10px;
+  justify-content: start;
+}
+
+@media (min-width: 1500px) {
+  .match-list {
+    justify-content: center; 
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
 }
 
 .match-list::-webkit-scrollbar {
